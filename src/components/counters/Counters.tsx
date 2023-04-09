@@ -8,7 +8,7 @@ export const Counters = () => {
   return (
     <div className={css.container} style={{backgroundColor: blue[100]}}>
       <div style={{marginLeft: '10px', marginTop: '20px'}}>
-        <a href="/">
+        <a href="/portfolio">
           <UndoIcon />
         </a>
       </div>

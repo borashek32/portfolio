@@ -19,7 +19,7 @@ export const Telegram: React.FC<TelegramType> = ({name}) => {
   return (
     <div className={s.mainContainer}>
       <div style={{marginLeft: '10px', marginTop: '20px'}}>
-        <a href="/">
+        <a href="/portfolio">
           <UndoIcon />
         </a>
       </div>
