@@ -8,11 +8,9 @@ import {useFormik} from "formik"
 import emailjs from '@emailjs/browser'
 import {Error} from "components/blocks/utils/Error";
 import {selectContact} from "components/blocks/Contact/contact.selector";
-import Snackbar  from '@mui/material/Snackbar';
 import {useState} from "react";
-import Stack from "@mui/material/Stack";
 import Loader from '../utils/Loader'
-import {Alert} from "components/blocks/utils/Alert";
+import Notification from "components/blocks/utils/Notification";
 
 
 type FormikErrorType = {
@@ -67,7 +65,6 @@ export const Contact = () => {
     }
   })
 
-
   const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
     if (reason === 'clickaway') {
       return;
@@ -75,18 +72,16 @@ export const Contact = () => {
     setOpen(false);
   };
 
+
   return (
     <div className={s.block} style={{position: 'relative'}}>
       <Title name={contact.name} id={contact.id}/>
-      {open &&
-        <Stack spacing={2} sx={{ width: '100%' }}>
-          <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
-            <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-              Your message sent successfully!
-            </Alert>
-          </Snackbar>
-        </Stack>
-      }
+      {open && <Notification
+        text={"Your message sent successfully"}
+        severity={"success"}
+        handleClose={handleClose}
+        open={open}
+      />}
       <div className={s.blockWrapper}>
         <form className={s.formSize} id={'form'} onSubmit={formik.handleSubmit}>
           <div style={{position: 'relative'}}>
