@@ -2,6 +2,7 @@ import React from 'react'
 import s from "styles/Main.module.sass";
 import {NavLink} from "react-router-dom";
 import {ButtonDefault} from "./ButtonDefault";
+import {LinkApp} from "components/blocks/utils/LinkApp";
 
 
 type CardAppType = {
@@ -12,6 +13,7 @@ type CardAppType = {
   imgAlt: string
   desc: string
   target: boolean
+  gh: string | undefined
 }
 
 export const CardApp: React.FC<CardAppType> = ({
@@ -21,7 +23,8 @@ export const CardApp: React.FC<CardAppType> = ({
                                                  imgPath,
                                                  imgAlt,
                                                  desc,
-                                                 target
+                                                 target,
+                                                 gh
                                                }) => {
 
   return (
@@ -43,6 +46,7 @@ export const CardApp: React.FC<CardAppType> = ({
           </div>
         </NavLink>}
       <p>{desc}</p>
+      <LinkApp gh={gh} />
     </div>
   )
 }

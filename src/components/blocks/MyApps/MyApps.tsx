@@ -23,6 +23,7 @@ export const MyApps = () => {
         imgAlt={app.imgAlt}
         desc={app.desc}
         target={app.target}
+        gh={app.gh}
       />
     )
   })

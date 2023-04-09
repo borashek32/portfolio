@@ -48,6 +48,7 @@ export type ContactType = {
 export type MyAppType = {
   id: string
   link: string
+  gh?: string
   header: string
   imgPath: string
   imgAlt: string
@@ -80,7 +81,8 @@ export const initialState: MainType = {
     apps: [
       {
         id: "app-" + v1(),
-        link: "https://borashek32.github.io/way-samurai_todolist-thursday/",
+        link: "https://borashek32.github.io/todolists/",
+        gh: "https://github.com/borashek32/todolists",
         header: "TodoList",
         imgPath: todolist,
         imgAlt: "todolist",
@@ -90,6 +92,7 @@ export const initialState: MainType = {
       {
         id: "app-" + v1(),
         link: "https://borashek32.github.io/way-samurai_social-network_ts_old/",
+        gh: "https://github.com/borashek32/way-samurai_social-network_ts_old",
         header: "Social Network",
         imgPath: socialNetwork,
         imgAlt: "social-network",
@@ -99,6 +102,7 @@ export const initialState: MainType = {
       {
         id: "app-" + v1(),
         link: "/counters",
+        gh: "https://github.com/borashek32/portfolio/tree/main/src/components/counters",
         header: "Counters",
         imgPath: counters,
         imgAlt: "counters",
@@ -108,6 +112,7 @@ export const initialState: MainType = {
       {
         id: "app-" + v1(),
         link: "https://borashek32.github.io/way-samurai_hw-autotests",
+        gh: "https://github.com/borashek32/way-samurai_hw-autotests",
         header: "Separate Blocks",
         imgPath: separateBlocks,
         imgAlt: "separate-blocks",
@@ -117,6 +122,7 @@ export const initialState: MainType = {
       {
         id: "app-" + v1(),
         link: "/telegram",
+        gh: "https://github.com/borashek32/portfolio/tree/main/src/components/telegram",
         header: "Messenger",
         imgPath: tl,
         imgAlt: "messenger",
