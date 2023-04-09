@@ -82,7 +82,7 @@ export const Contact = () => {
         handleClose={handleClose}
         open={open}
       />}
-      <div className={s.blockWrapper}>
+      <div className={s.blockWrapperContact}>
         <form className={s.formSize} id={'form'} onSubmit={formik.handleSubmit}>
           <div style={{position: 'relative'}}>
             <InputDefault

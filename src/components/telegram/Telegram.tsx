@@ -3,7 +3,7 @@ import s from "./Telegram.module.sass";
 import css from "styles/App.module.sass";
 import {RightSide} from "./items/RightSide";
 import {LeftSide} from "./items/LeftSide";
-import UndoIcon from "@mui/icons-material/Undo";
+import {Back} from "components/blocks/utils/Back";
 
 export type TelegramType = {
   name: string
@@ -18,11 +18,7 @@ export const Telegram: React.FC<TelegramType> = ({name}) => {
 
   return (
     <div className={s.mainContainer}>
-      <div style={{marginLeft: '10px', marginTop: '20px'}}>
-        <a href="/portfolio">
-          <UndoIcon />
-        </a>
-      </div>
+      <Back />
       <div className={css.wrapper}>
         <div className={css.app}>
           <h1 className={css.title}>{name}</h1>
