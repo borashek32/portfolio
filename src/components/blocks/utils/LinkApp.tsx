@@ -10,7 +10,7 @@ export const LinkApp: React.FC<LinkProps> = ({gh}) => {
 
   return (
     <a href={gh} target={"_blank"}>
-      <img style={{border: "4px", margin: "2px 0px 10px 10px", width: "auto", height: "30px"}} src={gitImg} alt="git"/>
+      <img style={{width: "auto", height: "30px", flex: 0}} src={gitImg} alt="git"/>
     </a>
   )
 }

@@ -83,11 +83,11 @@ export const initialState: MainType = {
         id: "app-" + v1(),
         link: "https://borashek32.github.io/todolists/",
         gh: "https://github.com/borashek32/todolists",
-        header: "TodoList",
+        header: "TodoLists",
         imgPath: todolist,
-        imgAlt: "todolist",
+        imgAlt: "todolists",
         target: true,
-        desc: "ToDoList is an online platform for organizing your personal or work tasks which can help you to increase the productivity, prioritise tasks, manage tasks effectively and improve time management. Made on React + Redux using all the advantages of these tools, following the right architecture and the best practices.",
+        desc: "ToDoLists is an online platform for organizing your personal or work tasks which can help you to increase the productivity, manage tasks effectively and improve time management. Made on React + Redux using all the advantages of these tools, following the right architecture and the best practices.",
       },
       {
         id: "app-" + v1(),
@@ -97,7 +97,7 @@ export const initialState: MainType = {
         imgPath: socialNetwork,
         imgAlt: "social-network",
         target: true,
-        desc: "Social Network is an online platform that allows people to create an account and communicate with other people on the website. Users can build there virtual world on the site, make friends and share their thoughts and ideas by writing a new post. This app was build on old school class components, following all architectural principles of them."
+        desc: "Social Network is an online platform that allows people to create an account and communicate with other people on the website. This app was build on old school class components, following all architectural principles of them."
       },
       {
         id: "app-" + v1(),
@@ -107,28 +107,28 @@ export const initialState: MainType = {
         imgPath: counters,
         imgAlt: "counters",
         target: false,
-        desc: "Counters are test projects which (to tell the truth) don't have a lot of practical use. They allow us to do some settings which influence on the way how the counter works. Anyways they are good examples of great opportunities which libraries of React and Redux provide. The advanced counter has a timer, what works with hooks and local storage."
+        desc: "To tell the truth, counters don't have a lot of practical use. They allow us to do some settings which influence on the way how the counter works. Anyways they are good examples of great opportunities which libraries of React and Redux provide. The advanced counter has a timer, what works on hooks and local storage."
       },
-      {
-        id: "app-" + v1(),
-        link: "https://borashek32.github.io/way-samurai_hw-autotests",
-        gh: "https://github.com/borashek32/way-samurai_hw-autotests",
-        header: "Separate Blocks",
-        imgPath: separateBlocks,
-        imgAlt: "separate-blocks",
-        target: true,
-        desc: "These blocks exist on every web page. I made them using all advantages of React, native CSS just to show you. I've made them like a stand to take a separate block to a new app, what is built. Some blocks depends on each other, because they are reusable. I've built them on functional components, using Hooks, local storage."
-        },
-      {
-        id: "app-" + v1(),
-        link: "/telegram",
-        gh: "https://github.com/borashek32/portfolio/tree/main/src/components/telegram",
-        header: "Messenger",
-        imgPath: tl,
-        imgAlt: "messenger",
-        target: false,
-        desc: "In this pet project I was trying to simulate behavior of the messenger like Telegram. Just imagine, that users are on separate PCs and my messenger allows them to write each other, edit own messages and delete them. Their messages appear immediately and synchronously on two parts of the screen as it is in a real messenger.",
-      }
+      // {
+      //   id: "app-" + v1(),
+      //   link: "https://borashek32.github.io/way-samurai_hw-autotests",
+      //   gh: "https://github.com/borashek32/way-samurai_hw-autotests",
+      //   header: "Separate Blocks",
+      //   imgPath: separateBlocks,
+      //   imgAlt: "separate-blocks",
+      //   target: true,
+      //   desc: "These blocks exist on every web page. I made them using all advantages of React, native CSS just to show you. I've made them like a stand to take a separate block to a new app, what is built. Some blocks depends on each other, because they are reusable. I've built them on functional components, using Hooks, local storage."
+      //   },
+      // {
+      //   id: "app-" + v1(),
+      //   link: "/telegram",
+      //   gh: "https://github.com/borashek32/portfolio/tree/main/src/components/telegram",
+      //   header: "Messenger",
+      //   imgPath: tl,
+      //   imgAlt: "messenger",
+      //   target: false,
+      //   desc: "In this pet project I was trying to simulate behavior of the messenger like Telegram. Just imagine, that users are on separate PCs and my messenger allows them to write each other, edit own messages and delete them. Their messages appear immediately and synchronously on two parts of the screen as it is in a real messenger.",
+      // }
     ]
   },
   hireMe: {
