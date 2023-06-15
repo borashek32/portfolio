@@ -1,9 +1,8 @@
 import {v1} from "uuid"
-import tl from "components/blocks/MyApps/img/tl.jpg";
 import todolist from "components/blocks/MyApps/img/todolist.jpg";
 import counters from "components/blocks/MyApps/img/counters.png";
 import socialNetwork from "components/blocks/MyApps/img/social-network.jpg";
-import separateBlocks from "components/blocks/MyApps/img/separate-blocks.jpg";
+import cards from "components/blocks/MyApps/img/cards.jpg";
 import reactLogo from "../../components/blocks/MySkills/img/logo192.png";
 import reduxLogo from "../../components/blocks/MySkills/img/redux.png";
 import tsLogo from "../../components/blocks/MySkills/img/ts.png";
@@ -108,6 +107,16 @@ export const initialState: MainType = {
         imgAlt: "counters",
         target: false,
         desc: "To tell the truth, counters don't have a lot of practical use. They allow us to do some settings which influence on the way how the counter works. Anyways they are good examples of great opportunities which libraries of React and Redux provide. The advanced counter has a timer, what works on hooks and local storage."
+      },
+      {
+        id: "app-" + v1(),
+        link: "https://borashek32.github.io/cards",
+        gh: "https://github.com/borashek32/cards",
+        header: "State Learning System",
+        imgPath: cards,
+        imgAlt: "cards",
+        target: false,
+        desc: "This app is an example of a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reuseful components and it can be rewrote for any business easily."
       },
       // {
       //   id: "app-" + v1(),
