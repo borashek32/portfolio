@@ -82,7 +82,7 @@ export const initialState: MainType = {
         id: "app-" + v1(),
         link: "https://borashek32.github.io/todolists/",
         gh: "https://github.com/borashek32/todolists",
-        header: "TodoLists",
+        header: "Task Tracker",
         imgPath: todolist,
         imgAlt: "todolists",
         target: true,
@@ -115,7 +115,7 @@ export const initialState: MainType = {
         header: "State Learning System",
         imgPath: cards,
         imgAlt: "cards",
-        target: false,
+        target: true,
         desc: "This app is an example of a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reuseful components and it can be rewrote for any business easily."
       },
       // {
