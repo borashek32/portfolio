@@ -3,8 +3,6 @@ import s from "styles/Main.module.sass";
 import {Title} from "../utils/Title";
 import {CardApp} from "../utils/CardApp";
 import {useSelector} from "react-redux";
-import {AppRootStateType} from "store/store";
-import {MyAppsType} from "store/main/main-reducer";
 import {selectMyApps} from "components/blocks/MyApps/myApps.selector";
 
 

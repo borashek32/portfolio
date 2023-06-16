@@ -2,6 +2,8 @@ import {v1} from "uuid"
 import todolist from "components/blocks/MyApps/img/todolist.jpg";
 import counters from "components/blocks/MyApps/img/counters.png";
 import socialNetwork from "components/blocks/MyApps/img/social-network.jpg";
+import separateBlocks from "components/blocks/MyApps/img/separate-blocks.jpg";
+import tl from "components/blocks/MyApps/img/tl.jpg";
 import cards from "components/blocks/MyApps/img/cards.jpg";
 import reactLogo from "../../components/blocks/MySkills/img/logo192.png";
 import reduxLogo from "../../components/blocks/MySkills/img/redux.png";
@@ -82,11 +84,11 @@ export const initialState: MainType = {
         id: "app-" + v1(),
         link: "https://borashek32.github.io/todolists/",
         gh: "https://github.com/borashek32/todolists",
-        header: "Task Tracker",
+        header: "Task Manager",
         imgPath: todolist,
         imgAlt: "todolists",
         target: true,
-        desc: "ToDoLists is an online platform for organizing your personal or work tasks which can help you to increase the productivity, manage tasks effectively and improve time management. Made on React + Redux using all the advantages of these tools, following the right architecture and the best practices.",
+        desc: "Task tracker is an online platform for organizing your personal or work tasks which can help you to increase the productivity, manage tasks effectively and improve time management. Made on React + Redux using all the advantages of these tools, following the right architecture and the best practices.",
       },
       {
         id: "app-" + v1(),
@@ -102,7 +104,7 @@ export const initialState: MainType = {
         id: "app-" + v1(),
         link: "/counters",
         gh: "https://github.com/borashek32/portfolio/tree/main/src/components/counters",
-        header: "Counters",
+        header: "Time Tracker",
         imgPath: counters,
         imgAlt: "counters",
         target: false,
@@ -112,32 +114,32 @@ export const initialState: MainType = {
         id: "app-" + v1(),
         link: "https://borashek32.github.io/cards",
         gh: "https://github.com/borashek32/cards",
-        header: "State Learning System",
+        header: "Smart Learning Cards",
         imgPath: cards,
         imgAlt: "cards",
         target: true,
-        desc: "This app is an example of a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reuseful components and it can be rewrote for any business easily."
+        desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
       },
-      // {
-      //   id: "app-" + v1(),
-      //   link: "https://borashek32.github.io/way-samurai_hw-autotests",
-      //   gh: "https://github.com/borashek32/way-samurai_hw-autotests",
-      //   header: "Separate Blocks",
-      //   imgPath: separateBlocks,
-      //   imgAlt: "separate-blocks",
-      //   target: true,
-      //   desc: "These blocks exist on every web page. I made them using all advantages of React, native CSS just to show you. I've made them like a stand to take a separate block to a new app, what is built. Some blocks depends on each other, because they are reusable. I've built them on functional components, using Hooks, local storage."
-      //   },
-      // {
-      //   id: "app-" + v1(),
-      //   link: "/telegram",
-      //   gh: "https://github.com/borashek32/portfolio/tree/main/src/components/telegram",
-      //   header: "Messenger",
-      //   imgPath: tl,
-      //   imgAlt: "messenger",
-      //   target: false,
-      //   desc: "In this pet project I was trying to simulate behavior of the messenger like Telegram. Just imagine, that users are on separate PCs and my messenger allows them to write each other, edit own messages and delete them. Their messages appear immediately and synchronously on two parts of the screen as it is in a real messenger.",
-      // }
+      {
+        id: "app-" + v1(),
+        link: "https://borashek32.github.io/way-samurai_hw-autotests",
+        gh: "https://github.com/borashek32/way-samurai_hw-autotests",
+        header: "Separate Blocks",
+        imgPath: separateBlocks,
+        imgAlt: "separate-blocks",
+        target: true,
+        desc: "These blocks exist on every web page. I made them using all advantages of React, native CSS just to show you. I've made them like a stand to take a separate block to a new app, what is built. Some blocks depends on each other, because they are reusable. I've built them on functional components, using Hooks, local storage."
+        },
+      {
+        id: "app-" + v1(),
+        link: "/telegram",
+        gh: "https://github.com/borashek32/portfolio/tree/main/src/components/telegram",
+        header: "Messenger",
+        imgPath: tl,
+        imgAlt: "messenger",
+        target: false,
+        desc: "In this pet project I was trying to simulate behavior of the messenger like Telegram. Just imagine, that users are on separate PCs and my messenger allows them to write each other, edit own messages and delete them. Their messages appear immediately and synchronously on two parts of the screen as it is in a real messenger.",
+      }
     ]
   },
   hireMe: {

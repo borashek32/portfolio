@@ -1,9 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import s from "styles/Main.module.sass";
-import { NavLink } from "react-router-dom";
-import { ButtonDefault } from "./ButtonDefault";
-import { LinkApp } from "components/blocks/utils/LinkApp";
-import { log } from "console";
+import {NavLink} from "react-router-dom";
+import {ButtonDefault} from "./ButtonDefault";
+import {LinkApp} from "components/blocks/utils/LinkApp";
 
 type CardAppType = {
   id: string;
