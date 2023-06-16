@@ -94,11 +94,11 @@ export const initialState: MainType = {
         id: "app-" + v1(),
         link: "https://borashek32.github.io/way-samurai_social-network_ts_old/",
         gh: "https://github.com/borashek32/way-samurai_social-network_ts_old",
-        header: "Social Network",
+        header: "Commercial Network",
         imgPath: socialNetwork,
         imgAlt: "social-network",
         target: true,
-        desc: "Social Network is an online platform that allows people to create an account and communicate with other people on the website. This app was build on old school class components, following all architectural principles of them."
+        desc: "Commercial Network is an online platform for any company that allows people to create an account and communicate with other people on the website. This app was build on old school class components, following all architectural principles of them."
       },
       {
         id: "app-" + v1(),
