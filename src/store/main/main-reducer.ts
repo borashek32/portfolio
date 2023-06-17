@@ -94,7 +94,7 @@ export const initialState: MainType = {
         id: "app-" + v1(),
         link: "https://borashek32.github.io/way-samurai_social-network_ts_old/",
         gh: "https://github.com/borashek32/way-samurai_social-network_ts_old",
-        header: "Commercial Network",
+        header: "Social Network",
         imgPath: socialNetwork,
         imgAlt: "social-network",
         target: true,
