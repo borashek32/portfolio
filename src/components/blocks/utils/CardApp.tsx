@@ -53,9 +53,9 @@ export const CardApp: React.FC<CardAppType> = ({
         )}
       </div>
 
-      <div className={s.blockDesc}>
-        <p>{desc}</p>
-      </div>
+      {/*<div className={s.blockDesc}>*/}
+      {/*  <p>{desc}</p>*/}
+      {/*</div>*/}
 
       <div>
         <LinkApp gh={gh} />
