@@ -48,7 +48,7 @@ export const HireMe = () => {
         open={open || error}
       />}
       <div className={s.blockHireMe}>
-        <a href={'./cv.pdf'} download>
+        <a href={'./cv_eng.pdf'} download>
           <ButtonDefault name={"CV"} type={"button"} callback={downloadPDF} />
         </a>
         <a href="https://www.linkedin.com/in/nataly-baranova-972952253/" target={'_blank'}>
