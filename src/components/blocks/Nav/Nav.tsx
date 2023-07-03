@@ -11,6 +11,7 @@ import {createTheme, ThemeProvider} from "@mui/material";
 import {useSelector} from "react-redux";
 import {useState} from "react";
 import {selectLinks} from "components/blocks/Nav/nav.selector";
+import SelectLang from "components/blocks/Nav/SelectLang"
 
 
 export const Nav = () => {
@@ -91,7 +92,7 @@ export const Nav = () => {
         position: 'fixed',
         zIndex: 1000000
       }}>
-        <div style={{display: "flex", alignItems: "center"}}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: 'space-between' }}>
 
           {/*burger*/}
           <div
@@ -129,6 +130,8 @@ export const Nav = () => {
 
             {mappedLinks}
           </Box>
+
+          <SelectLang />
         </div>
       </AppBar>
     </ThemeProvider>
