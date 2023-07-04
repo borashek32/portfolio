@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {memo} from 'react'
 import s from "styles/Main.module.sass" 
 import {CardApp} from "../utils/CardApp" 
 import {useSelector} from "react-redux" 
@@ -8,7 +8,7 @@ import {Trans} from "react-i18next"
 import Flip from "react-reveal/Flip"
 
 
-export const MyApps = () => {
+export const MyApps = memo(() => {
 
   const myApps = useSelector(selectMyApps)
 
@@ -42,4 +42,4 @@ export const MyApps = () => {
       <div id={"mySkills"}></div>
     </div>
   )
-}
+})

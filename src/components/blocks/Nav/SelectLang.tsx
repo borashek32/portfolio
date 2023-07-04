@@ -5,6 +5,9 @@ import InputLabel from '@mui/material/InputLabel'
 import FormControl from '@mui/material/FormControl'
 import {createTheme, MenuItem, Select, SelectChangeEvent, ThemeProvider} from "@mui/material"
 import {LangType} from "store/main/main.types"
+import {useDispatch, useSelector} from "react-redux"
+import {ChangeLangAC} from "store/main/main.reducer"
+import {selectLang} from "components/blocks/Nav/nav.selector"
 
 
 type Props = {
@@ -34,11 +37,15 @@ export const SelectLang: FC<Props> = ({ handleChangeLanguage }) => {
     }
   })
 
-  const [language, setLanguage] = useState<LangType>('en')
+  // const [language, setLanguage] = useState<LangType>('en')
+
+  const dispatch = useDispatch()
+
+  const lang = useSelector(selectLang)
 
   const handleOnChange = (event: SelectChangeEvent<LangType>) => {
     handleChangeLanguage(event.target.value as LangType)
-    setLanguage(event.target.value as LangType)
+    dispatch(ChangeLangAC(event.target.value as LangType))
   }
 
   return (
@@ -50,7 +57,7 @@ export const SelectLang: FC<Props> = ({ handleChangeLanguage }) => {
             sx={{height: 46}}
             labelId="demo-simple-select-label"
             id="demo-simple-select"
-            value={language}
+            value={lang}
             label="Language"
             onChange={handleOnChange}
           >

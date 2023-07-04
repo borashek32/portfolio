@@ -29,5 +29,6 @@
     "placeholderMessage": "Введите свое сообщение",
     "buttonText": "Отправить сообщение"
   },
-  "mySkills": { "name": "Мои технологии" }
+  "mySkills": { "name": "Мои технологии" },
+  "myNameFooter": "Баранова Наталья"
 }

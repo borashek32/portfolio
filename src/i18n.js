@@ -31,6 +31,4 @@ i18n
     },
   })
 
-console.log(i18n.t('key'))
-
 export default i18n;

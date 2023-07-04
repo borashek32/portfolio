@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {memo} from 'react'
 import s from "styles/Main.module.sass"
 import {useSelector} from "react-redux"
 import {NavLink} from "react-router-dom"
@@ -8,7 +8,7 @@ import {Trans} from "react-i18next"
 import Flip from "react-reveal/Flip"
 
 
-export const MySkills = () => {
+export const MySkills = memo(() => {
 
   const mySkills = useSelector(selectMySkills)
 
@@ -67,4 +67,4 @@ export const MySkills = () => {
       </div>
     </div>
   )
-}
+})

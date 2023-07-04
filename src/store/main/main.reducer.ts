@@ -17,7 +17,7 @@ import cssLogo from "components/blocks/MySkills/img/css.webp"
 import mui from "components/blocks/MySkills/img/mui.png"
 import tailwind from "components/blocks/MySkills/img/tailwind.png"
 import htmlLogo from "components/blocks/MySkills/img/html.jpeg"
-import {StateType} from "store/main/main.types"
+import {LangType, StateType} from "store/main/main.types"
 
 
 export const initialState: StateType = {
@@ -260,11 +260,24 @@ export const initialState: StateType = {
   }
 }
 
-type ActionType = any
+type ActionType = ChangeLangType
+
+type ChangeLangType = {
+  type: "CHANGE_LANG_TYPE"
+  lang: LangType
+}
 
 export const mainReducer = (state = initialState, action: ActionType): StateType => {
   switch (action.type) {
+    case "CHANGE_LANG_TYPE": {
+      return {
+        ...state,
+        lang: action.lang
+      }
+    }
     default:
       return state
   }
 }
+
+export const ChangeLangAC = (lang: LangType) => ({ type: "CHANGE_LANG_TYPE", lang })

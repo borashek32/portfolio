@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {memo} from 'react'
 import s from 'styles/Main.module.sass'
 import {useSelector} from "react-redux";
 import {selectAboutMe} from "components/blocks/AboutMe/aboutMe.selector"
@@ -7,7 +7,7 @@ import {Trans} from "react-i18next"
 import Flip from 'react-reveal/Flip'
 
 
-export const AboutMe = () => {
+export const AboutMe = memo(() => {
 
   const aboutMe = useSelector(selectAboutMe)
 
@@ -35,4 +35,4 @@ export const AboutMe = () => {
       </div>
     </div>
   )
-}
+})

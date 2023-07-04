@@ -1,21 +1,19 @@
 import s from 'styles/Main.module.sass'
 import * as React from "react"
-import {Title} from "../utils/Title"
-import {ButtonDefault} from "../utils/ButtonDefault"
+import {memo, useState} from "react"
 import {useSelector} from "react-redux"
 import {InputDefault} from "../utils/InputDefault"
 import {useFormik} from "formik"
 import emailjs from '@emailjs/browser'
 import {Error} from "components/blocks/utils/Error"
 import {selectContact} from "components/blocks/Contact/contact.selector"
-import {useState} from "react"
 import Loader from '../utils/Loader'
 import Notification from "components/blocks/utils/Notification"
 import {Trans} from "react-i18next"
-// @ts-ignore
-import Flip from "react-reveal/Flip"
 import {pink} from "@mui/material/colors"
 import Button from "@mui/material/Button"
+// @ts-ignore
+import Flip from "react-reveal/Flip"
 
 
 type FormikErrorType = {
@@ -24,7 +22,7 @@ type FormikErrorType = {
   message?: string
 }
 
-export const Contact = () => {
+export const Contact = memo(() => {
 
   const contact = useSelector(selectContact)
   const [open, setOpen] = useState(false)
@@ -115,6 +113,7 @@ export const Contact = () => {
 
           <div style={{marginTop: '10px'}}>
             <Button
+              type={"submit"}
               sx={{
                 color: "#76ecfa",
                 border: "1px solid #76ecfa",
@@ -131,4 +130,4 @@ export const Contact = () => {
       </div>
     </div>
   )
-}
+})

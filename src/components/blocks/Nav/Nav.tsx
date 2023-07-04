@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {FC, useState} from 'react';
+import {FC, memo, useState} from 'react';
 import s from "./Nav.module.sass"
 import {NavLink} from "react-router-dom";
 import AppBar from '@mui/material/AppBar';
@@ -13,14 +13,13 @@ import {useSelector} from "react-redux";
 import {selectLinks} from "components/blocks/Nav/nav.selector";
 import {SelectLang} from "components/blocks/Nav/SelectLang"
 import {LangType} from "store/main/main.types"
-import {Trans} from "react-i18next"
 
 
 type Props = {
   handleChangeLanguage: (language: LangType) => void
 }
 
-export const Nav: FC<Props> = ({handleChangeLanguage}) => {
+export const Nav: FC<Props> = memo(({ handleChangeLanguage }) => {
 
   const links = useSelector(selectLinks)
 
@@ -145,4 +144,4 @@ export const Nav: FC<Props> = ({handleChangeLanguage}) => {
       </AppBar>
     </ThemeProvider>
   )
-}
+})
