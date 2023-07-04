@@ -31,7 +31,7 @@ export const CardApp: React.FC<CardAppType> = ({
 
   return (
     <div className={s.blockCard}>
-      <div style={{display: "flex", justifyContent: "center", alignItems: "top"}}>
+      <div style={{display: "flex", justifyContent: "center", alignItems: "top", whiteSpace: "pre-line"}}>
         {target ? (
           <a
             href={link}
