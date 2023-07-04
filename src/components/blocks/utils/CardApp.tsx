@@ -1,30 +1,33 @@
-import React from "react";
-import s from "styles/Main.module.sass";
-import {NavLink} from "react-router-dom";
-import {ButtonDefault} from "./ButtonDefault";
-import {LinkApp} from "components/blocks/utils/LinkApp";
+import React from "react"
+import s from "styles/Main.module.sass"
+import {NavLink} from "react-router-dom"
+import {ButtonDefault} from "./ButtonDefault"
+import {LinkApp} from "components/blocks/utils/LinkApp"
+import {Trans} from "react-i18next"
 
 type CardAppType = {
-  id: string;
-  link: string;
-  header: string;
-  imgPath: string;
-  imgAlt: string;
-  desc: string;
-  target: boolean;
-  gh: string | undefined;
-};
+  id: string
+  index: number
+  link: string
+  header: string
+  imgPath: string
+  imgAlt: string
+  desc: string
+  target: boolean
+  gh: string | undefined
+}
 
 export const CardApp: React.FC<CardAppType> = ({
-  id,
-  link,
-  header,
-  imgPath,
-  imgAlt,
-  desc,
-  target,
-  gh,
-}) => {
+                                                 id,
+                                                 index,
+                                                 link,
+                                                 header,
+                                                 imgPath,
+                                                 imgAlt,
+                                                 desc,
+                                                 target,
+                                                 gh,
+                                               }) => {
 
   return (
     <div className={s.blockCard}>
@@ -36,18 +39,31 @@ export const CardApp: React.FC<CardAppType> = ({
             target="_blank"
             rel="noreferrer"
           >
-            <h4 className={s.blockCardSectionsHeader}>{header}</h4>
-            <img src={imgPath} alt={imgAlt} className={s.blockCardPicture} />
+
+            <h4 className={s.blockCardSectionsHeader}>
+              <Trans key={index} i18nKey={`myApps.apps.${index}.header`}>
+                {header}
+              </Trans>
+            </h4>
+
+            <img src={imgPath} alt={imgAlt} className={s.blockCardPicture}/>
+
             <div className={s.blockCardSectionsButtonWrapper}>
-              <ButtonDefault name={"Open"} type={"button"} />
+              <ButtonDefault name={"Open"} type={"button"}/>
             </div>
           </a>
         ) : (
           <NavLink to={link} className={s.navLinkClass}>
-            <h4 className={s.blockCardSectionsHeader}>{header}</h4>
-            <img src={imgPath} alt={imgAlt} className={s.blockCardPicture} />
+            <h4 className={s.blockCardSectionsHeader}>
+              <Trans key={index} i18nKey={`myApps.apps.${index}.header`}>
+                {header}
+              </Trans>
+            </h4>
+
+            <img src={imgPath} alt={imgAlt} className={s.blockCardPicture}/>
+
             <div className={s.blockCardSectionsButtonWrapper}>
-              <ButtonDefault name={"Open"} type={"button"} />
+              <ButtonDefault name={"Open"} type={"button"}/>
             </div>
           </NavLink>
         )}
@@ -58,8 +74,8 @@ export const CardApp: React.FC<CardAppType> = ({
       {/*</div>*/}
 
       <div>
-        <LinkApp gh={gh} />
+        <LinkApp gh={gh}/>
       </div>
     </div>
-  );
-};
+  )
+} 

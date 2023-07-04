@@ -1,0 +1,35 @@
+{
+  "lang": "en",
+  "links": [
+    { "name": "About Me" },
+    { "name": "My Resumes" },
+    { "name": "My Projects" },
+    { "name": "My Skills" },
+    { "name": "Contact" }
+  ],
+  "aboutMe": {
+    "name": "About Me",
+    "desc": "My name is Baranova Nataly. I 'm a front-end developer looking for the opportunities to grow professionally. Having 2-year background in back-end and full-stack development I have a deep understanding of all the software development processes and how Agile projects are run. Taking part in the whole software life cycle and permanent desire to learn something new made me realize that a work of a front-end developer would help me to grow professionally, develop my skills and enjoy the job I am doing every day. Being a part of the teams I developed good communication skills. Respect and a friendly attitude towards every one around are the ground rules of my life."
+  },
+  "myApps": {
+    "name": "My Projects",
+    "apps": [
+      { "header": "Task Manager" },
+      { "header": "Social Network" },
+      { "header": "Time Tracker" },
+      { "header": "Smart Learning Cards" },
+      { "header": "Separate Blocks" }
+    ]
+  },
+  "hireMe": { "name": "My Resumes" },
+  "contact": {
+    "name": "Contact Me",
+    "placeholderName": "Enter your name",
+    "placeholderEmail": "Enter your email",
+    "placeholderMessage": "Enter your message",
+    "buttonText": "Send message"
+  },
+  "mySkills": {
+    "name": "My Skills"
+  }
+}

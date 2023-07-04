@@ -1,75 +1,33 @@
 import {v1} from "uuid"
-import todolist from "components/blocks/MyApps/img/todolist.jpg";
-import counters from "components/blocks/MyApps/img/counters.png";
-import socialNetwork from "components/blocks/MyApps/img/social-network.jpg";
-import separateBlocks from "components/blocks/MyApps/img/separate-blocks.jpg";
-import tl from "components/blocks/MyApps/img/tl.jpg";
-import cards from "components/blocks/MyApps/img/cards.jpg";
-import reactLogo from "../../components/blocks/MySkills/img/logo192.png";
-import reduxLogo from "../../components/blocks/MySkills/img/redux.png";
-import tsLogo from "../../components/blocks/MySkills/img/ts.png";
-import jsLogo from "../../components/blocks/MySkills/img/js.png";
-import sbLogo from "../../components/blocks/MySkills/img/sb.svg";
-import htmlLogo from "../../components/blocks/MySkills/img/html.jpeg";
-import cssLogo from "../../components/blocks/MySkills/img/css.webp";
-import unit from "../../components/blocks/MySkills/img/unit.svg";
-import postman from "../../components/blocks/MySkills/img/postman.png";
-import rest from "../../components/blocks/MySkills/img/rest.svg";
-import mui from "../../components/blocks/MySkills/img/mui.png";
-import tailwind from "../../components/blocks/MySkills/img/tailwind.png";
-import formik from "../../components/blocks/MySkills/img/formik.svg";
+import todolist from "components/blocks/MyApps/img/todolist.jpg"
+import socialNetwork from "components/blocks/MyApps/img/social-network.jpg"
+import counters from "components/blocks/MyApps/img/counters.png"
+import cards from "components/blocks/MyApps/img/cards.jpg"
+import separateBlocks from "components/blocks/MyApps/img/separate-blocks.jpg"
+import reactLogo from "components/blocks/MySkills/img/logo192.png"
+import reduxLogo from "components/blocks/MySkills/img/redux.png"
+import tsLogo from "components/blocks/MySkills/img/ts.png"
+import jsLogo from "components/blocks/MySkills/img/js.png"
+import sbLogo from "components/blocks/MySkills/img/sb.svg"
+import unit from "components/blocks/MySkills/img/unit.svg"
+import postman from "components/blocks/MySkills/img/postman.png"
+import rest from "components/blocks/MySkills/img/rest.svg"
+import formik from "components/blocks/MySkills/img/formik.svg"
+import cssLogo from "components/blocks/MySkills/img/css.webp"
+import mui from "components/blocks/MySkills/img/mui.png"
+import tailwind from "components/blocks/MySkills/img/tailwind.png"
+import htmlLogo from "components/blocks/MySkills/img/html.jpeg"
+import {StateType} from "store/main/main.types"
 
 
-export type MainType = {
-  aboutMe: AboutMeType
-  myApps: MyAppsType
-  hireMe: HireMeType
-  contact: ContactType
-  mySkills: MyAppsType
-  links: LinkType[]
-}
-
-export type LinkType = {
-  name: string
-  href: string
-}
-export type AboutMeType = {
-  id: "aboutMe"
-  name: string
-  desc: string
-}
-export type HireMeType = {
-  id: "hireMe"
-  name: string
-}
-export type ContactType = {
-  name: string
-  id: "contact"
-}
-export type MyAppType = {
-  id: string
-  link: string
-  gh?: string
-  header: string
-  imgPath: string
-  imgAlt: string
-  desc: string
-  target: boolean
-}
-export type MyAppsType = {
-  id: string
-  name: string
-  apps: MyAppType[]
-}
-
-
-export const initialState: MainType = {
+export const initialState: StateType = {
+  lang: 'en',
   links: [
-    {name: "About Me", href: "aboutMe"},
-    {name: "My Resume", href: "hireMe"},
-    {name: "My Projects", href: "myProjects"},
-    {name: "My Skills", href: "mySkills"},
-    {name: "Contact", href: "contact"}
+    {index: 0, name: "About Me", href: "aboutMe"},
+    {index: 1, name: "My Resumes", href: "hireMe"},
+    {index: 2, name: "My Projects", href: "myProjects"},
+    {index: 3, name: "My Skills", href: "mySkills"},
+    {index: 4, name: "Contact", href: "contact"}
   ],
   aboutMe: {
     id: "aboutMe",
@@ -82,6 +40,7 @@ export const initialState: MainType = {
     apps: [
       {
         id: "app-" + v1(),
+        index: 0,
         link: "https://borashek32.github.io/todolists/",
         gh: "https://github.com/borashek32/todolists",
         header: "Task Manager",
@@ -93,6 +52,7 @@ export const initialState: MainType = {
       },
       {
         id: "app-" + v1(),
+        index: 1,
         link: "https://borashek32.github.io/way-samurai_social-network_ts_old/",
         gh: "https://github.com/borashek32/way-samurai_social-network_ts_old",
         header: "Social Network",
@@ -104,6 +64,7 @@ export const initialState: MainType = {
       },
       {
         id: "app-" + v1(),
+        index: 2,
         link: "/counters",
         gh: "https://github.com/borashek32/portfolio/tree/main/src/components/counters",
         header: "Time Tracker",
@@ -115,6 +76,7 @@ export const initialState: MainType = {
       },
       {
         id: "app-" + v1(),
+        index: 3,
         link: "https://borashek32.github.io/cards",
         gh: "https://github.com/borashek32/cards",
         header: "Smart Learning Cards",
@@ -126,6 +88,7 @@ export const initialState: MainType = {
       },
       {
         id: "app-" + v1(),
+        index: 4,
         link: "https://borashek32.github.io/way-samurai_hw-autotests",
         gh: "https://github.com/borashek32/way-samurai_hw-autotests",
         header: "Separate Blocks",
@@ -150,11 +113,14 @@ export const initialState: MainType = {
   },
   hireMe: {
     id: "hireMe",
-    name: "My Resume"
+    name: "My Resumes"
   },
   contact: {
     id: "contact",
-    name: "Contact Me"
+    name: "Contact Me",
+    placeholderName: "Enter your name",
+    placeholderEmail: "Enter your email",
+    placeholderMessage: "Enter your message"
   },
   mySkills: {
     id: "mySkills",
@@ -162,6 +128,7 @@ export const initialState: MainType = {
     apps: [
       {
         id: v1(),
+        index: 0,
         link: "https://reactjs.org",
         header: "React",
         imgPath: reactLogo,
@@ -171,6 +138,7 @@ export const initialState: MainType = {
       },
       {
         id: v1(),
+        index: 1,
         link: "https://redux.js.org/",
         header: "Redux",
         imgPath: reduxLogo,
@@ -180,6 +148,7 @@ export const initialState: MainType = {
       },
       {
         id: v1(),
+        index: 2,
         link: "https://www.typescriptlang.org/",
         header: "TypeScript",
         imgPath: tsLogo,
@@ -189,6 +158,7 @@ export const initialState: MainType = {
       },
       {
         id: v1(),
+        index: 3,
         link: "https://www.javascript.com/",
         header: "JavaScript",
         imgPath: jsLogo,
@@ -198,6 +168,7 @@ export const initialState: MainType = {
       },
       {
         id: v1(),
+        index: 4,
         link: "https://storybook.js.org/",
         header: "StoryBook",
         imgPath: sbLogo,
@@ -207,6 +178,7 @@ export const initialState: MainType = {
       },
       {
         id: v1(),
+        index: 5,
         link: "https://jestjs.io/",
         header: "Unit Testing",
         imgPath: unit,
@@ -216,6 +188,7 @@ export const initialState: MainType = {
       },
       {
         id: v1(),
+        index: 6,
         link: "https://community.postman.com/",
         header: "Postman",
         imgPath: postman,
@@ -225,6 +198,7 @@ export const initialState: MainType = {
       },
       {
         id: v1(),
+        index: 7,
         link: "https://www.redhat.com/en/topics/api/what-is-a-rest-api#:~:text=choose%20Red%20Hat%3F-,Overview,by%20computer%20scientist%20Roy%20Fielding.",
         header: "RestAPI",
         imgPath: rest,
@@ -234,6 +208,7 @@ export const initialState: MainType = {
       },
       {
         id: v1(),
+        index: 8,
         link: "https://formik.org/",
         header: "Formik",
         imgPath: formik,
@@ -243,6 +218,7 @@ export const initialState: MainType = {
       },
       {
         id: v1(),
+        index: 9,
         link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
         header: "CSS/SASS",
         imgPath: cssLogo,
@@ -252,6 +228,7 @@ export const initialState: MainType = {
       },
       {
         id: v1(),
+        index: 10,
         link: "https://mui.com/",
         header: "Material UI",
         imgPath: mui,
@@ -261,6 +238,7 @@ export const initialState: MainType = {
       },
       {
         id: v1(),
+        index: 11,
         link: "https://tailwindcss.com/",
         header: "Tailwind CSS",
         imgPath: tailwind,
@@ -270,6 +248,7 @@ export const initialState: MainType = {
       },
       {
         id: v1(),
+        index: 12,
         link: "https://html.com/",
         header: "HTML",
         imgPath: htmlLogo,
@@ -283,7 +262,7 @@ export const initialState: MainType = {
 
 type ActionType = any
 
-export const mainReducer = (state = initialState, action: ActionType): MainType => {
+export const mainReducer = (state = initialState, action: ActionType): StateType => {
   switch (action.type) {
     default:
       return state

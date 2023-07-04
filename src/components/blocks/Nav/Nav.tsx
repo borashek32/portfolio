@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {FC, useState} from 'react';
 import s from "./Nav.module.sass"
 import {NavLink} from "react-router-dom";
 import AppBar from '@mui/material/AppBar';
@@ -9,12 +10,17 @@ import SvgIcon, {SvgIconProps} from '@mui/material/SvgIcon';
 import {NavbarLink} from "../utils/NavbarLink";
 import {createTheme, ThemeProvider} from "@mui/material";
 import {useSelector} from "react-redux";
-import {useState} from "react";
 import {selectLinks} from "components/blocks/Nav/nav.selector";
-import SelectLang from "components/blocks/Nav/SelectLang"
+import {SelectLang} from "components/blocks/Nav/SelectLang"
+import {LangType} from "store/main/main.types"
+import {Trans} from "react-i18next"
 
 
-export const Nav = () => {
+type Props = {
+  handleChangeLanguage: (language: LangType) => void
+}
+
+export const Nav: FC<Props> = ({handleChangeLanguage}) => {
 
   const links = useSelector(selectLinks)
 
@@ -30,13 +36,14 @@ export const Nav = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
     setActive(false)
-  };
+  }
 
   const mappedLinks = links.map(link => {
     return (
       <div key={link.href}>
         <NavbarLink
           onClose={handleCloseNavMenu}
+          index={link.index}
           href={link.href}
           name={link.name}
         />
@@ -92,7 +99,7 @@ export const Nav = () => {
         position: 'fixed',
         zIndex: 1000000
       }}>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: 'space-between' }}>
+        <div style={{display: "flex", alignItems: "center", justifyContent: 'space-between'}}>
 
           {/*burger*/}
           <div
@@ -113,8 +120,10 @@ export const Nav = () => {
               anchorEl={anchorElNav}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{display: {xs: 'block', md: 'none'}, margin: 0, background: "#020024FF",
-                backgroundImage: "linear-gradient(to right, #0f0c29, #302b63, #24243e)"}}
+              sx={{
+                display: {xs: 'block', md: 'none'}, margin: 0, background: "#020024FF",
+                backgroundImage: "linear-gradient(to right, #0f0c29, #302b63, #24243e)"
+              }}
             >
               {mappedLinks}
             </Menu>
@@ -131,7 +140,7 @@ export const Nav = () => {
             {mappedLinks}
           </Box>
 
-          <SelectLang />
+          <SelectLang handleChangeLanguage={handleChangeLanguage}/>
         </div>
       </AppBar>
     </ThemeProvider>

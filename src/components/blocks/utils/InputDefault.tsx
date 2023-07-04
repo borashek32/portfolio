@@ -4,7 +4,7 @@ import {ChangeEvent} from "react";
 
 
 type InputDefaultType = {
-  placeholder: string
+  placeholder?: string
   name: string
   value: string
   onChange: (e: ChangeEvent<any>) => void

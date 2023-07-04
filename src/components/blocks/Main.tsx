@@ -9,6 +9,9 @@ import {Footer} from "./Footer/Footer"
 import css from "styles/App.module.sass"
 import {Nav} from "./Nav/Nav"
 import Typed from "react-typed"
+import {useTranslation} from "react-i18next"
+import {LangType} from "store/main/main.types"
+import * as React from "react"
 
 
 type MainPropsType = {
@@ -17,10 +20,15 @@ type MainPropsType = {
 
 export const Main: React.FC<MainPropsType> = ({name}) => {
 
+  const { i18n } = useTranslation()
+
+  const handleChangeLanguage = (language: LangType) => {
+    i18n.changeLanguage(language)
+  }
 
   return (
     <div className={css.container}>
-      <Nav/>
+      <Nav handleChangeLanguage={handleChangeLanguage} />
       <div className={s.backgroundAnimation}>
         <div className={styles.mainFlexWrapper}>
           <div className={styles.mainContainer}>

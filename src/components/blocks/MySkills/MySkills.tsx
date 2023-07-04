@@ -1,9 +1,11 @@
 import React from 'react'
-import s from "styles/Main.module.sass";
-import {Title} from "../utils/Title";
-import {useSelector} from "react-redux";
-import {NavLink} from "react-router-dom";
-import {selectMySkills} from "components/blocks/MySkills/mySkills.selector";
+import s from "styles/Main.module.sass"
+import {useSelector} from "react-redux"
+import {NavLink} from "react-router-dom"
+import {selectMySkills} from "components/blocks/MySkills/mySkills.selector"
+import {Trans} from "react-i18next"
+// @ts-ignore
+import Flip from "react-reveal/Flip"
 
 
 export const MySkills = () => {
@@ -55,7 +57,11 @@ export const MySkills = () => {
 
   return (
     <div className={s.block}>
-      <Title name={mySkills.name} id={mySkills.id}/>
+      <Flip>
+        <h2 id={mySkills.id} className={s.blockTitle}>
+          <Trans i18nKey={"mySkills.name"}>{mySkills.name}</Trans>
+        </h2>
+      </Flip>
       <div className={s.blockFlex}>
         {mappedMySkills}
       </div>

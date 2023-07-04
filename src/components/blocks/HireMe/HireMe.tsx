@@ -1,12 +1,14 @@
-import s from "styles/Main.module.sass";
-import * as React from "react";
-import {Title} from "../utils/Title";
-import {ButtonDefault} from "../utils/ButtonDefault";
-import {useSelector} from "react-redux";
-import {selectHireMe} from "components/blocks/HireMe/hireMe.selector";
-import {useState} from "react";
-import Notification from "components/blocks/utils/Notification";
-import Loader from "../utils/Loader";
+import s from "styles/Main.module.sass" 
+import * as React from "react" 
+import {ButtonDefault} from "../utils/ButtonDefault" 
+import {useSelector} from "react-redux" 
+import {selectHireMe} from "components/blocks/HireMe/hireMe.selector" 
+import {useState} from "react" 
+import Notification from "components/blocks/utils/Notification" 
+import Loader from "../utils/Loader" 
+import {Trans} from "react-i18next"
+// @ts-ignore
+import Flip from "react-reveal/Flip"
 
 
 export const HireMe = () => {
@@ -14,15 +16,15 @@ export const HireMe = () => {
 
   const hireMe = useSelector(selectHireMe)
   const [loader, setLoader] = useState(false)
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false) 
   const [error, setError] = useState(false)
 
   const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
     if (reason === 'clickaway') {
-      return;
+      return 
     }
-    setOpen(false);
-  };
+    setOpen(false) 
+  } 
 
   const downloadPDF = () => {
     try {
@@ -39,7 +41,11 @@ export const HireMe = () => {
 
   return (
     <div className={s.block} id={"myProjects"}>
-      <Title name={hireMe.name}/>
+      <Flip>
+        <h2 id={hireMe.id} className={s.blockTitle}>
+          <Trans i18nKey={"hireMe.name"}>{hireMe.name}</Trans>
+        </h2>
+      </Flip>
       {loader && <Loader />}
       {(open || error) && <Notification
         text={open ? "CV downloaded successfully" : "Something went wrong. Please try later or contact me"}

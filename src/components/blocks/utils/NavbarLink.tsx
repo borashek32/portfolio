@@ -2,15 +2,17 @@ import React from 'react'
 import {AlertTitle} from "@mui/material"
 import {pink} from "@mui/material/colors"
 import {Link as SmoothLink} from "react-scroll"
+import {Trans} from "react-i18next"
 
 
 type NavbarLinkType = {
+  index: number
   name: string
   href: string
   onClose: () => void
 }
 
-export const NavbarLink: React.FC<NavbarLinkType> = ({name, href, onClose}) => {
+export const NavbarLink: React.FC<NavbarLinkType> = ({name, href, index, onClose}) => {
 
   return (
     <SmoothLink to={href} spy={true} smooth={true} offset={50} duration={500}>
@@ -34,7 +36,11 @@ export const NavbarLink: React.FC<NavbarLinkType> = ({name, href, onClose}) => {
           marginRight: "15px",
           cursor: 'pointer'
         }}
-      >{name}</AlertTitle>
+      >
+        <Trans key={index} i18nKey={`links.${index}.name`}>
+          {name}
+        </Trans>
+      </AlertTitle>
     </SmoothLink>
   )
 }

@@ -6,11 +6,16 @@ import {useSelector} from "react-redux"
 import {InputDefault} from "../utils/InputDefault"
 import {useFormik} from "formik"
 import emailjs from '@emailjs/browser'
-import {Error} from "components/blocks/utils/Error";
-import {selectContact} from "components/blocks/Contact/contact.selector";
-import {useState} from "react";
+import {Error} from "components/blocks/utils/Error"
+import {selectContact} from "components/blocks/Contact/contact.selector"
+import {useState} from "react"
 import Loader from '../utils/Loader'
-import Notification from "components/blocks/utils/Notification";
+import Notification from "components/blocks/utils/Notification"
+import {Trans} from "react-i18next"
+// @ts-ignore
+import Flip from "react-reveal/Flip"
+import {pink} from "@mui/material/colors"
+import Button from "@mui/material/Button"
 
 
 type FormikErrorType = {
@@ -22,7 +27,7 @@ type FormikErrorType = {
 export const Contact = () => {
 
   const contact = useSelector(selectContact)
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
   const [loader, setLoader] = useState(false)
   const regX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
 
@@ -55,27 +60,31 @@ export const Contact = () => {
       setLoader(true)
       emailjs.send('react_apps_portfolio', 'template_hvucuvu', values, 'j8gE2ZL2UeMzMqmxB')
         .then((result) => {
-          setTimeout(() => {
-            setOpen(true)
-            setLoader(false)
-          }, 1000)
-          formik.resetForm()
-        }
-      )
+            setTimeout(() => {
+              setOpen(true)
+              setLoader(false)
+            }, 1000)
+            formik.resetForm()
+          }
+        )
     }
   })
 
   const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
     if (reason === 'clickaway') {
-      return;
+      return
     }
-    setOpen(false);
-  };
+    setOpen(false)
+  }
 
 
   return (
     <div className={s.block} style={{position: 'relative'}}>
-      <Title name={contact.name} id={contact.id}/>
+      <Flip>
+        <h2 id={contact.id} className={s.blockTitle}>
+          <Trans i18nKey={"contact.name"}>{contact.name}</Trans>
+        </h2>
+      </Flip>
       {open && <Notification
         text={"Your message sent successfully"}
         severity={"success"}
@@ -84,34 +93,39 @@ export const Contact = () => {
       />}
       <div className={s.blockWrapperContact}>
         <form className={s.formSize} id={'form'} onSubmit={formik.handleSubmit}>
-          <div style={{position: 'relative'}}>
-            <InputDefault
-              placeholder={"Enter your name"}
-              {...formik.getFieldProps('user_name')}
-            />
+          <div style={{position: 'relative', fontSize: 12, color: 'grey'}}>
+            <Trans i18nKey={"contact.placeholderName"}>{contact.placeholderName}</Trans>
+            <InputDefault {...formik.getFieldProps('user_name')} />
             {formik.touched.user_name && formik.errors.user_name ? <Error error={formik.errors.user_name}/> : null}
           </div>
 
-          {loader && <Loader />}
+          {loader && <Loader/>}
 
-          <div style={{position: 'relative'}}>
-            <InputDefault
-              placeholder={"Enter your email address"}
-              {...formik.getFieldProps('user_email')}
-            />
+          <div style={{position: 'relative', fontSize: 12, color: 'grey'}}>
+            <Trans i18nKey={"contact.placeholderEmail"}>{contact.placeholderEmail}</Trans>
+            <InputDefault {...formik.getFieldProps('user_email')} />
             {formik.touched.user_email && formik.errors.user_email ? <Error error={formik.errors.user_email}/> : null}
           </div>
 
-          <div style={{position: 'relative'}}>
-            <InputDefault
-              placeholder={"Enter your message"}
-              {...formik.getFieldProps('message')}
-            />
+          <div style={{position: 'relative', fontSize: 12, color: 'grey'}}>
+            <Trans i18nKey={"contact.placeholderMessage"}>{contact.placeholderMessage}</Trans>
+            <InputDefault {...formik.getFieldProps('message')} />
             {formik.touched.message && formik.errors.message ? <Error error={formik.errors.message}/> : null}
           </div>
 
           <div style={{marginTop: '10px'}}>
-            <ButtonDefault name={"Send message"} type={"submit"}/>
+            <Button
+              sx={{
+                color: "#76ecfa",
+                border: "1px solid #76ecfa",
+                "&:hover": {color: pink[500], borderColor: pink[500]}
+              }}
+              variant="outlined"
+            >
+              <Trans i18nKey={`contact.buttonText`}>
+                Send message
+              </Trans>
+            </Button>
           </div>
         </form>
       </div>
