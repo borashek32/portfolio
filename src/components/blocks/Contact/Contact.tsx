@@ -1,6 +1,6 @@
 import s from 'styles/Main.module.sass'
 import * as React from "react"
-import {memo, useState} from "react"
+import {useState} from "react"
 import {useSelector} from "react-redux"
 import {InputDefault} from "../utils/InputDefault"
 import {useFormik} from "formik"
@@ -22,7 +22,7 @@ type FormikErrorType = {
   message?: string
 }
 
-export const Contact = memo(() => {
+export const Contact = () => {
 
   const contact = useSelector(selectContact)
   const [open, setOpen] = useState(false)
@@ -130,4 +130,4 @@ export const Contact = memo(() => {
       </div>
     </div>
   )
-})
+}

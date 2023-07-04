@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {FC, memo, useState} from 'react';
+import {FC, useState} from 'react';
 import s from "./Nav.module.sass"
 import {NavLink} from "react-router-dom";
 import AppBar from '@mui/material/AppBar';
@@ -19,7 +19,7 @@ type Props = {
   handleChangeLanguage: (language: LangType) => void
 }
 
-export const Nav: FC<Props> = memo(({ handleChangeLanguage }) => {
+export const Nav: FC<Props> = ({handleChangeLanguage}) => {
 
   const links = useSelector(selectLinks)
 
@@ -144,4 +144,4 @@ export const Nav: FC<Props> = memo(({ handleChangeLanguage }) => {
       </AppBar>
     </ThemeProvider>
   )
-})
+}

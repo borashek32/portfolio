@@ -3,7 +3,7 @@ import * as React from "react"
 import {ButtonDefault} from "../utils/ButtonDefault" 
 import {useSelector} from "react-redux" 
 import {selectHireMe} from "components/blocks/HireMe/hireMe.selector" 
-import {memo, useState} from "react"
+import {useState} from "react"
 import Notification from "components/blocks/utils/Notification" 
 import Loader from "../utils/Loader" 
 import {Trans} from "react-i18next"
@@ -11,7 +11,7 @@ import {selectLang} from "components/blocks/Nav/nav.selector"
 // @ts-ignore
 import Flip from "react-reveal/Flip"
 
-export const HireMe = memo(() => {
+export const HireMe = () => {
 
   const hireMe = useSelector(selectHireMe)
   const [loader, setLoader] = useState(false)
@@ -72,4 +72,4 @@ export const HireMe = memo(() => {
       </div>
     </div>
   )
-})
+}
