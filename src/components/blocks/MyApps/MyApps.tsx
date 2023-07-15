@@ -9,7 +9,7 @@ import Flip from "react-reveal/Flip"
 
 
 export const MyApps = () => {
-
+  console.log(3 + 2 + '7')
   const myApps = useSelector(selectMyApps)
 
   const mappedMyApps = myApps.apps.map(app => {

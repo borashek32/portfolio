@@ -86,18 +86,18 @@ export const initialState: StateType = {
         // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
         desc: ''
       },
-      {
-        id: "app-" + v1(),
-        index: 4,
-        link: "https://borashek32.github.io/way-samurai_hw-autotests",
-        gh: "https://github.com/borashek32/way-samurai_hw-autotests",
-        header: "Separate Blocks",
-        imgPath: separateBlocks,
-        imgAlt: "separate-blocks",
-        target: true,
-        // desc: "These blocks exist on every web page. I made them using all advantages of React, native CSS just to show you. I've made them like a stand to take a separate block to a new app, what is built. Some blocks depends on each other, because they are reusable. I've built them on functional components, using Hooks, local storage."
-        desc: ''
-      },
+      // {
+      //   id: "app-" + v1(),
+      //   index: 4,
+      //   link: "https://borashek32.github.io/way-samurai_hw-autotests",
+      //   gh: "https://github.com/borashek32/way-samurai_hw-autotests",
+      //   header: "Separate Blocks",
+      //   imgPath: separateBlocks,
+      //   imgAlt: "separate-blocks",
+      //   target: true,
+      //   // desc: "These blocks exist on every web page. I made them using all advantages of React, native CSS just to show you. I've made them like a stand to take a separate block to a new app, what is built. Some blocks depends on each other, because they are reusable. I've built them on functional components, using Hooks, local storage."
+      //   desc: ''
+      // },
       // {
       //   id: "app-" + v1(),
       //   link: "/telegram",
