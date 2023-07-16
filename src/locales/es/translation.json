@@ -18,7 +18,8 @@
       { "header": "Red social" },
       { "header": "Rastreador de tiempo" },
       { "header": "Tarjetas de aprendizaje" },
-      { "header": "Bloques separados" }
+      { "header": "Tienda de auto partes en Laravel 8" },
+      { "header": "Portafolio viejo en Laravel 8" }
     ]
   },
   "hireMe": {

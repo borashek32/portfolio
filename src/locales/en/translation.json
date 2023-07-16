@@ -18,7 +18,8 @@
       { "header": "Social Network" },
       { "header": "Time Tracker" },
       { "header": "Smart Learning Cards" },
-      { "header": "Separate Blocks" }
+      { "header": "Shop of Auto Parts on Laravel 8" },
+      { "header": "Old portfolio on Laravel 8" }
     ]
   },
   "hireMe": { "name": "My Resumes" },
