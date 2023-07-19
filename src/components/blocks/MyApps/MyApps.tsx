@@ -1,15 +1,15 @@
 import React from 'react'
-import s from "styles/Main.module.sass" 
-import {CardApp} from "../utils/CardApp" 
-import {useSelector} from "react-redux" 
-import {selectMyApps} from "components/blocks/MyApps/myApps.selector" 
+import s from "styles/Main.module.sass"
+import {CardApp} from "../utils/CardApp"
+import {useSelector} from "react-redux"
+import {selectMyApps} from "components/blocks/MyApps/myApps.selector"
 import {Trans} from "react-i18next"
 // @ts-ignore
 import Flip from "react-reveal/Flip"
 
 
 export const MyApps = () => {
-  console.log(3 + 2 + '7')
+
   const myApps = useSelector(selectMyApps)
 
   const mappedMyApps = myApps.apps.map(app => {

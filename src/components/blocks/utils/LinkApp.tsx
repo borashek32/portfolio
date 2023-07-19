@@ -10,7 +10,10 @@ export const LinkApp: React.FC<LinkProps> = ({gh}) => {
 
   return (
     <a href={gh} target={"_blank"}>
-      <img style={{width: "auto", height: "30px", flex: 0}} src={gitImg} alt="git"/>
+      {gh
+        ? <img style={{width: "auto", height: "30px", flex: 0}} src={gitImg} alt="git"/>
+        : <p style={{color: "#fff"}}>Private GitHub (no access)</p>
+      }
     </a>
   )
 }
