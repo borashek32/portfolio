@@ -3,6 +3,7 @@ import todolist from "components/blocks/MyApps/img/todolist.jpg"
 import socialNetwork from "components/blocks/MyApps/img/social-network.jpg"
 import counters from "components/blocks/MyApps/img/counters.png"
 import cards from "components/blocks/MyApps/img/cards.jpg"
+import pb from "components/blocks/MyApps/img/pb.png"
 import parts from "components/blocks/MyApps/img/parts.jpg"
 import portfolio from "components/blocks/MyApps/img/portfolio.jpg"
 import separateBlocks from "components/blocks/MyApps/img/separate-blocks.jpg"
@@ -55,6 +56,18 @@ export const initialState: StateType = {
       {
         id: "app-" + v1(),
         index: 1,
+        link: "https://borashek32.github.io/personal-blog/",
+        gh: "https://github.com/borashek32/personal-blog",
+        header: "Personal Blog (in process)",
+        imgPath: pb,
+        imgAlt: "personal-blog",
+        target: true,
+        // desc: "Task tracker is an online platform for organizing your personal or work tasks which can help you to increase the productivity, manage tasks effectively and improve time management. Made on React + Redux using all the advantages of these tools, following the right architecture and the best practices.",
+        desc: ''
+      },
+      {
+        id: "app-" + v1(),
+        index: 2,
         link: "https://borashek32.github.io/way-samurai_social-network_ts_old/",
         gh: "https://github.com/borashek32/way-samurai_social-network_ts_old",
         header: "Social Network",
@@ -66,7 +79,7 @@ export const initialState: StateType = {
       },
       {
         id: "app-" + v1(),
-        index: 2,
+        index: 3,
         link: "/counters",
         gh: "https://github.com/borashek32/portfolio/tree/main/src/components/counters",
         header: "Time Tracker",
@@ -78,7 +91,7 @@ export const initialState: StateType = {
       },
       {
         id: "app-" + v1(),
-        index: 3,
+        index: 4,
         link: "https://borashek32.github.io/cards",
         gh: "https://github.com/borashek32/cards",
         header: "Smart Learning Cards",
@@ -90,7 +103,7 @@ export const initialState: StateType = {
       },
       {
         id: "app-" + v1(),
-        index: 4,
+        index: 5,
         link: "https://lemma-auto.ru",
         gh: "",
         header: "Shop of Auto Parts",
@@ -102,7 +115,7 @@ export const initialState: StateType = {
       },
       {
         id: "app-" + v1(),
-        index: 5,
+        index: 6,
         link: "https://www.digitalcoffeedesign.com/",
         gh: "https://github.com/borashek32/digitalcoffeedesign.com",
         header: "My Old Portfolio",

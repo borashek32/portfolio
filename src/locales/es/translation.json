@@ -15,6 +15,7 @@
     "name": "Mis Proyectos",
     "apps": [
       { "header": "Administrador de tareas" },
+      { "header": "Blog personal (en process)"},
       { "header": "Red social" },
       { "header": "Rastreador de tiempo" },
       { "header": "Tarjetas de aprendizaje" },

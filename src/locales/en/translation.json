@@ -15,6 +15,7 @@
     "name": "My Projects",
     "apps": [
       { "header": "Task Manager" },
+      { "header": "Personal Blog (in process)"},
       { "header": "Social Network" },
       { "header": "Time Tracker" },
       { "header": "Smart Learning Cards" },
