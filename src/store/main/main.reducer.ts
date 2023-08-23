@@ -101,18 +101,18 @@ export const initialState: StateType = {
         // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
         desc: ''
       },
-      {
-        id: "app-" + v1(),
-        index: 5,
-        link: "https://lemma-auto.ru",
-        gh: "",
-        header: "Shop of Auto Parts",
-        imgPath: parts,
-        imgAlt: "parts",
-        target: true,
-        // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
-        desc: ''
-      },
+      // {
+      //   id: "app-" + v1(),
+      //   index: 5,
+      //   link: "https://lemma-auto.ru",
+      //   gh: "",
+      //   header: "Shop of Auto Parts",
+      //   imgPath: parts,
+      //   imgAlt: "parts",
+      //   target: true,
+      //   // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
+      //   desc: ''
+      // },
       // {
       //   id: "app-" + v1(),
       //   index: 6,
