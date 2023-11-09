@@ -8,6 +8,7 @@ import parts from "components/blocks/MyApps/img/parts.jpg"
 import portfolio from "components/blocks/MyApps/img/portfolio.jpg"
 import separateBlocks from "components/blocks/MyApps/img/separate-blocks.jpg"
 import reactLogo from "components/blocks/MySkills/img/logo192.png"
+import nextLogo from "components/blocks/MySkills/img/nextJs.svg"
 import reduxLogo from "components/blocks/MySkills/img/redux.png"
 import tsLogo from "components/blocks/MySkills/img/ts.png"
 import jsLogo from "components/blocks/MySkills/img/js.png"
@@ -16,10 +17,12 @@ import unit from "components/blocks/MySkills/img/unit.svg"
 import postman from "components/blocks/MySkills/img/postman.png"
 import rest from "components/blocks/MySkills/img/rest.svg"
 import formik from "components/blocks/MySkills/img/formik.svg"
+import hookForm from "components/blocks/MySkills/img/hookForm.png"
 import cssLogo from "components/blocks/MySkills/img/css.webp"
 import mui from "components/blocks/MySkills/img/mui.png"
 import tailwind from "components/blocks/MySkills/img/tailwind.png"
 import htmlLogo from "components/blocks/MySkills/img/html.jpeg"
+import swagger from "components/blocks/MySkills/img/swagger.svg"
 import {LangType, StateType} from "store/main/main.types"
 
 
@@ -169,7 +172,7 @@ export const initialState: StateType = {
         id: v1(),
         index: 0,
         link: "https://reactjs.org",
-        header: "React",
+        header: "ReactJS",
         imgPath: reactLogo,
         imgAlt: "react",
         desc: "",
@@ -178,6 +181,16 @@ export const initialState: StateType = {
       {
         id: v1(),
         index: 1,
+        link: "https://nextjs.org",
+        header: "NextJS",
+        imgPath: nextLogo,
+        imgAlt: "next",
+        desc: "",
+        target: true,
+      },
+      {
+        id: v1(),
+        index: 2,
         link: "https://redux.js.org/",
         header: "Redux",
         imgPath: reduxLogo,
@@ -187,7 +200,7 @@ export const initialState: StateType = {
       },
       {
         id: v1(),
-        index: 2,
+        index: 3,
         link: "https://www.typescriptlang.org/",
         header: "TypeScript",
         imgPath: tsLogo,
@@ -197,7 +210,7 @@ export const initialState: StateType = {
       },
       {
         id: v1(),
-        index: 3,
+        index: 4,
         link: "https://www.javascript.com/",
         header: "JavaScript",
         imgPath: jsLogo,
@@ -207,7 +220,7 @@ export const initialState: StateType = {
       },
       {
         id: v1(),
-        index: 4,
+        index: 5,
         link: "https://storybook.js.org/",
         header: "StoryBook",
         imgPath: sbLogo,
@@ -217,7 +230,7 @@ export const initialState: StateType = {
       },
       {
         id: v1(),
-        index: 5,
+        index: 6,
         link: "https://jestjs.io/",
         header: "Unit Testing",
         imgPath: unit,
@@ -227,7 +240,7 @@ export const initialState: StateType = {
       },
       {
         id: v1(),
-        index: 6,
+        index: 7,
         link: "https://community.postman.com/",
         header: "Postman",
         imgPath: postman,
@@ -237,7 +250,7 @@ export const initialState: StateType = {
       },
       {
         id: v1(),
-        index: 7,
+        index: 8,
         link: "https://www.redhat.com/en/topics/api/what-is-a-rest-api#:~:text=choose%20Red%20Hat%3F-,Overview,by%20computer%20scientist%20Roy%20Fielding.",
         header: "RestAPI",
         imgPath: rest,
@@ -247,7 +260,17 @@ export const initialState: StateType = {
       },
       {
         id: v1(),
-        index: 8,
+        index: 9,
+        link: "https://swagger.io/",
+        header: "Swagger",
+        imgPath: swagger,
+        imgAlt: "swagger",
+        desc: "",
+        target: true,
+      },
+      {
+        id: v1(),
+        index: 10,
         link: "https://formik.org/",
         header: "Formik",
         imgPath: formik,
@@ -257,7 +280,17 @@ export const initialState: StateType = {
       },
       {
         id: v1(),
-        index: 9,
+        index: 11,
+        link: "https://react-hook-form.com/",
+        header: "React Hook Form",
+        imgPath: hookForm,
+        imgAlt: "hookForm",
+        desc: "",
+        target: true,
+      },
+      {
+        id: v1(),
+        index: 12,
         link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
         header: "CSS/SASS",
         imgPath: cssLogo,
@@ -267,7 +300,7 @@ export const initialState: StateType = {
       },
       {
         id: v1(),
-        index: 10,
+        index: 13,
         link: "https://mui.com/",
         header: "Material UI",
         imgPath: mui,
@@ -277,7 +310,7 @@ export const initialState: StateType = {
       },
       {
         id: v1(),
-        index: 11,
+        index: 14,
         link: "https://tailwindcss.com/",
         header: "Tailwind CSS",
         imgPath: tailwind,
@@ -287,14 +320,14 @@ export const initialState: StateType = {
       },
       {
         id: v1(),
-        index: 12,
+        index: 15,
         link: "https://html.com/",
         header: "HTML",
         imgPath: htmlLogo,
         imgAlt: "html",
         desc: "",
         target: true,
-      },
+      }
     ]
   }
 }
