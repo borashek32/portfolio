@@ -14,7 +14,8 @@ export const MySkills = () => {
 
   const mappedMySkills = mySkills.apps.map(app => {
 
-    const imgStyles = s.blockLogo + ' ' + (app.header === "React" ? s.blockLogoReact
+    const imgStyles = s.blockLogo + ' '
+      + (app.header === "React" ? s.blockLogoReact
       : app.header === "Redux" ? s.blockLogoRedux : '')
 
     if (app.target) {
