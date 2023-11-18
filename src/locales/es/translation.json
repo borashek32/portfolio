@@ -20,7 +20,8 @@
       { "header": "Rastreador de tiempo" },
       { "header": "Tarjetas de aprendizaje" },
       { "header": "Tienda de auto partes" },
-      { "header": "Portafolio viejo en Laravel 8" }
+      { "header": "Portafolio viejo en Laravel 8" },
+      { "header": "Instagram Clon"}
     ]
   },
   "hireMe": {

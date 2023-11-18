@@ -20,7 +20,8 @@
       { "header": "Time Tracker" },
       { "header": "Smart Learning Cards" },
       { "header": "Shop of Auto Parts" },
-      { "header": "Old portfolio on Laravel 8" }
+      { "header": "Old portfolio on Laravel 8" },
+      { "header": "Instagram Clone"}
     ]
   },
   "hireMe": { "name": "My Resumes" },
