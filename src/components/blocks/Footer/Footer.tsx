@@ -7,7 +7,7 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <div>
         <Trans i18nKey={"myNameFooter"}>
-          Baranova Natalya
+          Baranova Natalia
         </Trans>
       </div>
 
@@ -18,7 +18,9 @@ export const Footer = () => {
         {new Date().getFullYear()}
       </div>
 
-      <a className={styles.email} href="mailto:borashek@inbox.ru">borashek@inbox.ru</a>
+      <a className={styles.email} href="mailto:baranova.natalia.frontend@gmail.com">
+        baranova.natalia.frontend@gmail.com
+      </a>
     </footer>
   )
 }

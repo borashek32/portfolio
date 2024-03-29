@@ -15,13 +15,11 @@
     "name": "My Projects",
     "apps": [
       { "header": "Task Manager" },
-      { "header": "Personal Blog (in process)"},
       { "header": "Social Network" },
       { "header": "Time Tracker" },
       { "header": "Smart Learning Cards" },
-      { "header": "Shop of Auto Parts" },
-      { "header": "Old portfolio on Laravel 8" },
-      { "header": "Instagram Clone"}
+      { "header": "Instagram Clone"},
+      { "header": "Free Math Trainer" }
     ]
   },
   "hireMe": { "name": "My Resumes" },

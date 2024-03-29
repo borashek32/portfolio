@@ -25,6 +25,8 @@ import tailwind from "components/blocks/MySkills/img/tailwind.png"
 import htmlLogo from "components/blocks/MySkills/img/html.jpeg"
 import swagger from "components/blocks/MySkills/img/swagger.svg"
 import {LangType, StateType} from "store/main/main.types"
+import mathTrainer from "components/blocks/MyApps/img/math-trainer.png"
+import navigation from "components/blocks/MySkills/img/navigation.png"
 
 
 export const initialState: StateType = {
@@ -57,21 +59,21 @@ export const initialState: StateType = {
         // desc: "Task tracker is an online platform for organizing your personal or work tasks which can help you to increase the productivity, manage tasks effectively and improve time management. Made on React + Redux using all the advantages of these tools, following the right architecture and the best practices.",
         desc: ''
       },
+      // {
+      //   id: "app-" + v1(),
+      //   index: 1,
+      //   link: "https://borashek32.github.io/personal-blog/",
+      //   gh: "https://github.com/borashek32/personal-blog",
+      //   header: "Personal Blog (in process)",
+      //   imgPath: pb,
+      //   imgAlt: "personal-blog",
+      //   target: true,
+      //   // desc: "Task tracker is an online platform for organizing your personal or work tasks which can help you to increase the productivity, manage tasks effectively and improve time management. Made on React + Redux using all the advantages of these tools, following the right architecture and the best practices.",
+      //   desc: ''
+      // },
       {
         id: "app-" + v1(),
         index: 1,
-        link: "https://borashek32.github.io/personal-blog/",
-        gh: "https://github.com/borashek32/personal-blog",
-        header: "Personal Blog (in process)",
-        imgPath: pb,
-        imgAlt: "personal-blog",
-        target: true,
-        // desc: "Task tracker is an online platform for organizing your personal or work tasks which can help you to increase the productivity, manage tasks effectively and improve time management. Made on React + Redux using all the advantages of these tools, following the right architecture and the best practices.",
-        desc: ''
-      },
-      {
-        id: "app-" + v1(),
-        index: 2,
         link: "https://borashek32.github.io/way-samurai_social-network_ts_old/",
         gh: "https://github.com/borashek32/way-samurai_social-network_ts_old",
         header: "Social Network",
@@ -83,7 +85,7 @@ export const initialState: StateType = {
       },
       {
         id: "app-" + v1(),
-        index: 3,
+        index: 2,
         link: "/counters",
         gh: "https://github.com/borashek32/portfolio/tree/main/src/components/counters",
         header: "Time Tracker",
@@ -95,7 +97,7 @@ export const initialState: StateType = {
       },
       {
         id: "app-" + v1(),
-        index: 4,
+        index: 3,
         link: "https://borashek32.github.io/cards",
         gh: "https://github.com/borashek32/cards",
         header: "Smart Learning Cards",
@@ -107,12 +109,24 @@ export const initialState: StateType = {
       },
       {
         id: "app-" + v1(),
-        index: 7,
+        index: 4,
         link: "https://inctagram-blazing-bonfires.vercel.app/sign-in",
         gh: "https://github.com/kozyrovladimir/inctagram_blazing_bonfires/tree/dev",
         header: "Instagram Clone",
         imgPath: inst,
         imgAlt: "inst",
+        target: true,
+        // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
+        desc: ''
+      },
+      {
+        id: "app-" + v1(),
+        index: 5,
+        link: "https://learning-math-front-react.vercel.app/",
+        gh: "https://github.com/borashek32/learning-math-front-react",
+        header: "Free Math Trainer",
+        imgPath: mathTrainer,
+        imgAlt: "math-trainer",
         target: true,
         // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
         desc: ''
@@ -348,6 +362,16 @@ export const initialState: StateType = {
         header: "HTML",
         imgPath: htmlLogo,
         imgAlt: "html",
+        desc: "",
+        target: true,
+      },
+      {
+        id: v1(),
+        index: 17,
+        link: "https://reactnavigation.org/",
+        header: "React Navigation",
+        imgPath: navigation,
+        imgAlt: "navigation",
         desc: "",
         target: true,
       }
