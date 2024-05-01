@@ -1,7 +1,5 @@
-import * as React from 'react'
-import {FC, useState} from 'react'
+import {FC} from 'react'
 import Box from '@mui/material/Box'
-import InputLabel from '@mui/material/InputLabel'
 import FormControl from '@mui/material/FormControl'
 import {createTheme, MenuItem, Select, SelectChangeEvent, ThemeProvider} from "@mui/material"
 import {LangType} from "store/main/main.types"
@@ -50,20 +48,64 @@ export const SelectLang: FC<Props> = ({ handleChangeLanguage }) => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Box sx={{minWidth: 120, marginRight: 3}}>
+      <Box sx={{
+        width: 150, 
+        height: 40,
+        marginRight: 3
+      }}>
         <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-label">Language</InputLabel>
           <Select
-            sx={{height: 46}}
-            labelId="demo-simple-select-label"
+            sx={{
+              height: 40,
+              backgroundColor: '#fff',
+              color: '#461959',
+              fontSize: 18,
+              fontWeight: 600,
+              borderRadius: 20
+            }}
             id="demo-simple-select"
             value={lang}
-            label="Language"
             onChange={handleOnChange}
           >
-            <MenuItem value={'en'}>English</MenuItem>
-            <MenuItem value={'es'}>Español</MenuItem>
-            <MenuItem value={'ru'}>Русский</MenuItem>
+            <MenuItem
+              sx={{
+                fontSize: 18,
+                fontWeight: 600,
+                transition: 'all .3s ease',
+                '&:hover': {
+                  color: '#F86F03'
+                }
+              }} 
+              value={'en'}
+            >
+              English
+            </MenuItem>
+            <MenuItem
+              sx={{
+                fontSize: 18,
+                fontWeight: 600,
+                transition: 'all .3s ease',
+                '&:hover': {
+                  color: '#F86F03'
+                }
+              }} 
+              value={'es'}
+            >
+              Español
+            </MenuItem>
+            <MenuItem
+              sx={{
+                fontSize: 18,
+                fontWeight: 600,
+                transition: 'all .3s ease',
+                '&:hover': {
+                  color: '#F86F03'
+                }
+              }} 
+              value={'ru'}
+            >
+              Русский
+            </MenuItem>
           </Select>
         </FormControl>
       </Box>

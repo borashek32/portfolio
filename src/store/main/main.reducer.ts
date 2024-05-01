@@ -1,10 +1,10 @@
 import {v1} from "uuid"
-import todolist from "components/blocks/MyApps/img/todolist.jpg"
-import socialNetwork from "components/blocks/MyApps/img/social-network.jpg"
-import counters from "components/blocks/MyApps/img/counters.png"
-import cards from "components/blocks/MyApps/img/cards.jpg"
+import todolist from "components/blocks/MyApps/img/1.png"
+import socialNetwork from "components/blocks/MyApps/img/2.png"
+import counters from "components/blocks/MyApps/img/3.png"
+import cards from "components/blocks/MyApps/img/4.png"
 import pb from "components/blocks/MyApps/img/pb.png"
-import inst from "components/blocks/MyApps/img/inst.png"
+import inst from "components/blocks/MyApps/img/5.png"
 import parts from "components/blocks/MyApps/img/parts.jpg"
 import portfolio from "components/blocks/MyApps/img/portfolio.jpg"
 import separateBlocks from "components/blocks/MyApps/img/separate-blocks.jpg"
@@ -25,7 +25,7 @@ import tailwind from "components/blocks/MySkills/img/tailwind.png"
 import htmlLogo from "components/blocks/MySkills/img/html.jpeg"
 import swagger from "components/blocks/MySkills/img/swagger.svg"
 import {LangType, StateType} from "store/main/main.types"
-import mathTrainer from "components/blocks/MyApps/img/math-trainer.png"
+import mathTrainer from "components/blocks/MyApps/img/6.png"
 import navigation from "components/blocks/MySkills/img/navigation.png"
 
 
@@ -33,7 +33,6 @@ export const initialState: StateType = {
   lang: 'en',
   links: [
     {index: 0, name: "About Me", href: "aboutMe"},
-    {index: 1, name: "My Resumes", href: "hireMe"},
     {index: 2, name: "My Projects", href: "myProjects"},
     {index: 3, name: "My Skills", href: "mySkills"},
     {index: 4, name: "Contact", href: "contact"}

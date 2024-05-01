@@ -29,14 +29,14 @@ export const InputDefault: React.FC<InputDefaultType> = ({placeholder, name, onC
         '@media (max-width: 530px)': {width: "300px"},
         '@media (max-width: 430px)': {width: "270px"},
         '@media (max-width: 350px)': {width: "200px"},
-        '&::after': {borderBottom: '2px solid #76ecfa'},
+        '&::after': {borderBottom: '2px solid #F86F03'},
         input: {
           color: "#fff",
           "&::placeholder": {
             color: "#fff",
           },
           borderBottom: '2px solid #FFFFFF99',
-          paddingTop: '10px'
+          paddingTop: '10px',
         }
       }}
     />

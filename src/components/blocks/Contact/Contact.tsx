@@ -10,10 +10,10 @@ import {selectContact} from "components/blocks/Contact/contact.selector"
 import Loader from '../utils/Loader'
 import Notification from "components/blocks/utils/Notification"
 import {Trans} from "react-i18next"
-import {pink} from "@mui/material/colors"
 import Button from "@mui/material/Button"
 // @ts-ignore
 import Flip from "react-reveal/Flip"
+import { Box, Container, Typography } from '@mui/material'
 
 
 type FormikErrorType = {
@@ -23,7 +23,6 @@ type FormikErrorType = {
 }
 
 export const Contact = () => {
-
   const contact = useSelector(selectContact)
   const [open, setOpen] = useState(false)
   const [loader, setLoader] = useState(false)
@@ -58,13 +57,14 @@ export const Contact = () => {
       setLoader(true)
       emailjs.send('react_apps_portfolio', 'template_hvucuvu', values, 'j8gE2ZL2UeMzMqmxB')
         .then((result) => {
-            setTimeout(() => {
-              setOpen(true)
-              setLoader(false)
-            }, 1000)
-            formik.resetForm()
-          }
-        )
+          console.log('123', result)
+          setTimeout(() => {
+            setOpen(true)
+            setLoader(false)
+          }, 1000)
+          formik.resetForm()
+        }
+      )
     }
   })
 
@@ -77,11 +77,41 @@ export const Contact = () => {
 
 
   return (
-    <div className={s.block} style={{position: 'relative'}}>
+    <Container sx={{
+      position: 'relative',
+      height: 'auto',
+      paddingTop: 10,
+      paddingBottom: 10,
+      backgroundColor: '#31065A',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexDirection: 'column',
+      '@media (max-width: 1000px)': {
+        
+      },
+      '@media (max-width: 840px)': {
+        
+      }
+    }}
+      maxWidth={false}
+      id={contact.id}
+    >
       <Flip>
-        <h2 id={contact.id} className={s.blockTitle}>
-          <Trans i18nKey={"contact.name"}>{contact.name}</Trans>
-        </h2>
+        <Typography sx={{
+            color: '#fff',
+            fontSize: 40,
+          }}
+        >
+          <Trans i18nKey={"contact.name"} />
+        </Typography>
+        <Box sx={{
+          width: 240,
+          height: 2,
+          backgroundColor: '#fff',
+          marginBottom: 8,
+        }}
+        ></Box>
       </Flip>
       {open && <Notification
         text={"Your message sent successfully"}
@@ -115,9 +145,16 @@ export const Contact = () => {
             <Button
               type={"submit"}
               sx={{
-                color: "#76ecfa",
-                border: "1px solid #76ecfa",
-                "&:hover": {color: pink[500], borderColor: pink[500]}
+                color: "#fff",
+                fontSize: '18px',
+                fontWeight: 600,
+                backgroundColor: '#F86F03',
+                padding: '5px 10px',
+                borderRadius: 20,
+                transition: 'color, .3s ease',
+                "&:hover": {
+                  backgroundColor: '#5cd2df'
+                }
               }}
               variant="outlined"
             >
@@ -128,6 +165,6 @@ export const Contact = () => {
           </div>
         </form>
       </div>
-    </div>
+    </Container>
   )
 }

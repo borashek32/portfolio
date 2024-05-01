@@ -7,8 +7,17 @@
     { "name": "Mis Habilidades" },
     { "name": "Contáctame" }
   ],
+  "promo": {
+    "subheaderTop": "Hi, It's me",
+    "header": "Baranova Natalia",
+    "subheaderMiddle": "And I'm a",
+    "frontendDev": "frontend developer",
+    "subheaderBottom": "Frontend developer: TypeScript, React JS, Redux Toolkit, Rtk-query and others" 
+  },
   "aboutMe": {
-    "name": "Sobre mí",
+    "about": "Sobre mí",
+    "me": "mí",
+    "title": "Frontend Developer",
     "desc": "Mi nombre es Baranova Nataly. Soy un desarrollador front-end en busca de oportunidades para crecer profesionalmente. Con 2 años de experiencia en desarrollo back-end y full-stack, tengo un conocimiento profundo de todos los procesos de desarrollo de software y cómo se ejecutan los proyectos Agile. Participar en todo el ciclo de vida del software y el deseo permanente de aprender algo nuevo me hizo darme cuenta de que el trabajo de un desarrollador front-end me ayudaría a crecer profesionalmente, desarrollar mis habilidades y disfrutar del trabajo que realizo todos los días. Al ser parte de los equipos, desarrollé buenas habilidades de comunicación. El respeto y una actitud amistosa hacia todos los que me rodean son las reglas básicas de mi vida."
   },
   "myApps": {

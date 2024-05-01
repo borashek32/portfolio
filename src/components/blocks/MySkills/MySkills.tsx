@@ -1,4 +1,3 @@
-import React from 'react'
 import s from "styles/Main.module.sass"
 import {useSelector} from "react-redux"
 import {NavLink} from "react-router-dom"
@@ -6,6 +5,7 @@ import {selectMySkills} from "components/blocks/MySkills/mySkills.selector"
 import {Trans} from "react-i18next"
 // @ts-ignore
 import Flip from "react-reveal/Flip"
+import { Box, Container, Typography } from "@mui/material"
 
 
 export const MySkills = () => {
@@ -57,15 +57,44 @@ export const MySkills = () => {
   })
 
   return (
-    <div className={s.block}>
+    <Container sx={{
+      height: 'auto',
+      paddingTop: 10,
+      paddingBottom: 10,
+      backgroundColor: '#170550',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexDirection: 'column',
+      '@media (max-width: 1000px)': {
+        
+      },
+      '@media (max-width: 840px)': {
+        
+      }
+    }}
+      maxWidth={false}
+      id={mySkills.id}
+    >
       <Flip>
-        <h2 id={mySkills.id} className={s.blockTitle}>
-          <Trans i18nKey={"mySkills.name"}>{mySkills.name}</Trans>
-        </h2>
+        <Typography sx={{
+            color: '#fff',
+            fontSize: 40,
+          }}
+        >
+          <Trans i18nKey={"mySkills.name"} />
+        </Typography>
+        <Box sx={{
+          width: 240,
+          height: 2,
+          backgroundColor: '#fff',
+          marginBottom: 8,
+        }}
+        ></Box>
       </Flip>
       <div className={s.blockFlex}>
         {mappedMySkills}
       </div>
-    </div>
+    </Container>
   )
 }

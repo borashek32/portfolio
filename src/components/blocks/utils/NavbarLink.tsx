@@ -19,14 +19,17 @@ export const NavbarLink: React.FC<NavbarLinkType> = ({name, href, index, onClose
       <AlertTitle
         onClick={onClose}
         sx={{
+          marginLeft: '33px',
           my: 4,
           width: "100%",
-          color: '#0A1929FF',
+          color: '#FFF',
           fontWeight: 600,
           fontSize: "14px",
           display: 'block',
           textTransform: "uppercase",
-          "&:hover": {color: pink[500]},
+          "&:hover": {
+            color: '#F86F03'
+          },
           '@media (max-width: 900px)': {
             color: '#fff',
             fontSize: "20px",
@@ -34,7 +37,8 @@ export const NavbarLink: React.FC<NavbarLinkType> = ({name, href, index, onClose
           },
           whiteSpace: "nowrap",
           marginRight: "15px",
-          cursor: 'pointer'
+          cursor: 'pointer',
+          transition: 'color .3s ease'
         }}
       >
         <Trans key={index} i18nKey={`links.${index}.name`}>

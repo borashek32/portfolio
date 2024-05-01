@@ -1,16 +1,14 @@
-import * as React from 'react';
-import {FC, useState} from 'react';
-import s from "./Nav.module.sass"
-import {NavLink} from "react-router-dom";
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Menu from '@mui/material/Menu';
-import {pink} from '@mui/material/colors';
-import SvgIcon, {SvgIconProps} from '@mui/material/SvgIcon';
-import {NavbarLink} from "../utils/NavbarLink";
-import {createTheme, ThemeProvider} from "@mui/material";
-import {useSelector} from "react-redux";
-import {selectLinks} from "components/blocks/Nav/nav.selector";
+import * as React from 'react'
+import {FC, useState} from 'react'
+import styles from "./Nav.module.sass"
+import {NavLink} from "react-router-dom"
+import AppBar from '@mui/material/AppBar'
+import Box from '@mui/material/Box'
+import Menu from '@mui/material/Menu'
+import {NavbarLink} from "../utils/NavbarLink"
+import {createTheme, ThemeProvider} from "@mui/material"
+import {useSelector} from "react-redux"
+import {selectLinks} from "components/blocks/Nav/nav.selector"
 import {SelectLang} from "components/blocks/Nav/SelectLang"
 import {LangType} from "store/main/main.types"
 
@@ -20,50 +18,64 @@ type Props = {
 }
 
 export const Nav: FC<Props> = ({handleChangeLanguage}) => {
-
   const links = useSelector(selectLinks)
-
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-
+  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null)
   const [active, setActive] = useState(false)
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
+    setAnchorElNav(event.currentTarget)
     setActive(true)
-  };
+  }
 
   const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
+    setAnchorElNav(null)
     setActive(false)
   }
 
   const mappedLinks = links.map(link => {
     return (
-      <div key={link.href}>
+      <Box key={link.href}>
         <NavbarLink
           onClose={handleCloseNavMenu}
           index={link.index}
           href={link.href}
           name={link.name}
         />
-      </div>
+      </Box>
     )
   })
+
+
+  function HomeIcon() {
+    return (
+      <Box sx={{
+        marginLeft: '20px',
+      }}>
+        <img 
+          src={require('./react.png')} 
+          alt="react" 
+          width='40px' 
+        />
+      </Box>
+    )
+  }
 
   const theme = createTheme({
     components: {
       MuiMenu: {
         styleOverrides: {
           root: {
-            backgroundColor: '#0A1929FF',
+            backgroundColor: '#170550',
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
             '@media (max-width: 900px)': {
               overflow: "scroll"
-            }
+            },
+            color: '#fff'
           },
           paper: {
+            color: '#fff !important',
             backgroundColor: "transparent !important",
             boxShadow: "none !important",
             top: "50% !important",
@@ -79,39 +91,43 @@ export const Nav: FC<Props> = ({handleChangeLanguage}) => {
             }
           }
         }
+      },
+      MuiAppBar: {
+        styleOverrides: {
+          root: {
+            backgroundColor: '#170550',
+            position: 'fixed',
+            zIndex: 1000000
+          }
+        }
       }
     }
   })
 
-  function HomeIcon(props: SvgIconProps) {
-    return (
-      <SvgIcon {...props}>
-        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-      </SvgIcon>
-    );
-  }
-
   return (
     <ThemeProvider theme={theme}>
-      <AppBar position="fixed" sx={{
-        backgroundColor: '#76ecfa',
-        position: 'fixed',
-        zIndex: 1000000
-      }}>
-        <div style={{display: "flex", alignItems: "center", justifyContent: 'space-between'}}>
+      <AppBar position="fixed">
+        <Box sx={{
+          display: "flex", 
+          alignItems: "center", 
+          justifyContent: 'space-between'
+        }}>
 
           {/*burger*/}
-          <div
-            className={active ? (s.burger + ' ' + s.active) : s.burger}
+          <Box
+            className={active ? (styles.burger + ' ' + styles.active) : styles.burger}
             onClick={active ? handleCloseNavMenu : handleOpenNavMenu}
           >
             <span></span>
-          </div>
+          </Box>
 
           {/*small navbar*/}
           <Box sx={{
             flexGrow: 1,
-            display: {xs: 'flex', md: 'none'},
+            display: {
+              xs: 'flex', 
+              md: 'none'
+            },
             padding: "20px",
             justifyContent: "space-between"
           }}>
@@ -120,7 +136,12 @@ export const Nav: FC<Props> = ({handleChangeLanguage}) => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: {xs: 'block', md: 'none'}, margin: 0, background: "#020024FF",
+                display: {
+                  xs: 'block',
+                  md: 'none'
+                }, 
+                margin: 0, 
+                background: "#020024FF",
                 backgroundImage: "linear-gradient(to right, #0f0c29, #302b63, #24243e)"
               }}
             >
@@ -129,18 +150,26 @@ export const Nav: FC<Props> = ({handleChangeLanguage}) => {
           </Box>
 
           {/*big navbar*/}
-          <Box sx={{height: '70px', alignItems: 'center', justifyContent: "right", display: {xs: 'none', md: 'flex'}}}>
+          <Box sx={{
+            height: '70px', 
+            alignItems: 'center', 
+            justifyContent: "right", 
+            display: {
+              xs: 'none', 
+              md: 'flex'
+            }
+          }}>
 
             {/*home icon*/}
             <NavLink to="#aboutMe">
-              <HomeIcon sx={{color: pink[500], margin: '20px 20px 20px 20px'}}/>
+              <HomeIcon />
             </NavLink>
 
             {mappedLinks}
           </Box>
 
           <SelectLang handleChangeLanguage={handleChangeLanguage}/>
-        </div>
+        </Box>
       </AppBar>
     </ThemeProvider>
   )

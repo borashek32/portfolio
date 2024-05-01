@@ -1,0 +1,41 @@
+@import './../../../styles/variables.sass' 
+  
+.cardAppHover 
+  display: none
+  cursor: pointer
+  position: absolute
+  top: 0
+  left: 0
+  border-radius: 10px
+  transition: all 3s ease
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  background-color: $purpleColorHover
+  border-radius: 10px
+  overflow: hidden
+  width: 275px
+  height: 200px
+
+  @media (max-width: 950px)
+    display: flex
+
+.cardImg
+  border-radius: 10px
+  
+.cardApp
+  width: 275px
+  height: 200px
+  position: relative
+  transition: all 3s ease
+  width: 275px
+  height: 200px
+  overflow: hidden
+
+  &:hover
+    .cardImg
+      transform: scale(1.2)
+      transition: all 3s ease
+
+    .cardAppHover 
+      display: flex

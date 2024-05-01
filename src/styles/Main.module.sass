@@ -8,9 +8,9 @@
   display: flex
   flex-direction: column
   align-items: center
-  padding: 80px 20px 20px 20px
+  // padding: 80px 20px 20px 20px
   margin: 0 auto
-  width: 70%
+  // width: 70%
 
 .sideContainers
   width: 15%
@@ -26,8 +26,16 @@
 
 
 .block
-  margin-bottom: 150px
+  height: 800px
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
 
+.hireMe
+  background-color: $darkBlueColor
 
 .blockTitle
   color: $colorWhite
@@ -71,6 +79,8 @@
   .blockAboutWrapper
     flex-wrap: wrap
 
+.blockImg
+  border-radius: 15px
 
 /*----------------------------------------------Flex-container-------------------------------------------------*/
 .blockFlex
@@ -265,7 +275,7 @@
 .blockWrapperContact
   padding: 0
   background-color: inherit
-  border: 2px solid $colorBlueLight
+  border: 2px solid $orangeColor
   color: $colorWhite
 
 @media (max-width: 320px)
