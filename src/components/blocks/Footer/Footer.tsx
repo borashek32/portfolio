@@ -9,17 +9,11 @@ export const Footer = () => {
       height: 'auto',
       paddingTop: 6,
       paddingBottom: 6,
-      backgroundColor: '#170550',
+      backgroundColor: '#31065A',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
       flexDirection: 'column',
-      '@media (max-width: 1000px)': {
-        
-      },
-      '@media (max-width: 840px)': {
-        
-      }
     }}
       maxWidth={false}
     >

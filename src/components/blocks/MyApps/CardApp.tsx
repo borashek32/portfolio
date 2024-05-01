@@ -1,9 +1,8 @@
 import React from "react"
-import linkImg from './img/linkImg.png'
-import {NavLink} from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import styles from './MyApps.module.sass'
-import {LinkApp} from "components/blocks/utils/LinkApp"
-import {Trans} from "react-i18next"
+import { LinkApp } from "components/blocks/utils/LinkApp"
+import { Trans } from "react-i18next"
 import { Box, Typography } from "@mui/material"
 
 type CardAppType = {
@@ -44,12 +43,7 @@ export const CardApp: React.FC<CardAppType> = ({
             rel="noreferrer"
           >
             <Typography sx={{
-              fontSize: 18,
-              display: 'flex',
-              flexDirection: 'column',
-              gap: 1,
-              justifyContent: 'center',
-              alignItems: 'center'
+              fontSize: 18
             }}>
               <Trans key={index} i18nKey={`myApps.apps.${index}.header`}>
                 {header}

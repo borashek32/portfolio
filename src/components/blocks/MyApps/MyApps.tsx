@@ -1,10 +1,9 @@
-import {CardApp} from "./CardApp"
-import {useSelector} from "react-redux"
-import {selectMyApps} from "components/blocks/MyApps/myApps.selector"
-import {Trans} from "react-i18next"
-// @ts-ignore
-import Flip from "react-reveal/Flip"
-import { Box, Container, Typography } from '@mui/material'
+import { CardApp } from "./CardApp"
+import { useSelector } from "react-redux"
+import { selectMyApps } from "components/blocks/MyApps/myApps.selector"
+import { Container } from '@mui/material'
+import { Header } from "../utils/Header"
+import { AppContainer } from "../utils/AppContainer"
 
 
 export const MyApps = () => {
@@ -28,41 +27,14 @@ export const MyApps = () => {
   })
 
   return (
-    <Container sx={{
-      height: 'auto',
-      paddingTop: 10,
-      paddingBottom: 10,
-      backgroundColor: '#31065A',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      flexDirection: 'column',
-      '@media (max-width: 1000px)': {
-        
-      },
-      '@media (max-width: 840px)': {
-        
-      }
-    }}
-      maxWidth={false}
+    <AppContainer
       id={myApps.id}
+      bgColor="#31065A"
     >
-      <Flip>
-        <Typography sx={{
-            color: '#fff',
-            fontSize: 40,
-          }}
-        >
-          <Trans i18nKey={"myApps.name"} />
-        </Typography>
-        <Box sx={{
-          width: 240,
-          height: 2,
-          backgroundColor: '#fff',
-          marginBottom: 8,
-        }}
-        ></Box>
-      </Flip>
+      <Header
+        title='myApps.my'
+        titleOtherColor='myApps.projects'
+      />
       <Container sx={{
         display: 'flex',
         flexDirection: 'row',
@@ -78,6 +50,6 @@ export const MyApps = () => {
         {mappedMyApps}
       </Container>
       <div id={"mySkills"}></div>
-    </Container>
+    </AppContainer>
   )
 }

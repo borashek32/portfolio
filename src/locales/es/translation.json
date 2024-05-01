@@ -21,7 +21,8 @@
     "desc": "Mi nombre es Baranova Nataly. Soy un desarrollador front-end en busca de oportunidades para crecer profesionalmente. Con 2 años de experiencia en desarrollo back-end y full-stack, tengo un conocimiento profundo de todos los procesos de desarrollo de software y cómo se ejecutan los proyectos Agile. Participar en todo el ciclo de vida del software y el deseo permanente de aprender algo nuevo me hizo darme cuenta de que el trabajo de un desarrollador front-end me ayudaría a crecer profesionalmente, desarrollar mis habilidades y disfrutar del trabajo que realizo todos los días. Al ser parte de los equipos, desarrollé buenas habilidades de comunicación. El respeto y una actitud amistosa hacia todos los que me rodean son las reglas básicas de mi vida."
   },
   "myApps": {
-    "name": "Mis Proyectos",
+    "my": "Mis",
+    "projects": "Proyectos",
     "apps": [
       { "header": "Administrador de tareas" },
       { "header": "Red social" },
@@ -35,11 +36,15 @@
     "name": "Mis Currículums"
   },
   "contact": {
-    "name": "Contáctame",
+    "contact": "Contácta",
+    "me": "Me",
     "placeholderName": "Introduzca tu nombre",
     "placeholderEmail": "Introduzca tu email",
     "placeholderMessage": "Introduzca tu mensaje",
     "buttonText": "Enviar mensaje"
   },
-  "mySkills": { "name": "Mis Habilidades" }
+  "mySkills": { 
+    "my": "Mis", 
+    "skills": "Habilidades"
+  }
 }

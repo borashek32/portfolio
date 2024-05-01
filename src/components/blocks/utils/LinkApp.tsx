@@ -9,9 +9,17 @@ type LinkProps = {
 export const LinkApp: React.FC<LinkProps> = ({gh}) => {
 
   return (
-    <a href={gh} target={"_blank"}>
+    <a href={gh} target={"_blank"} style={{display: 'flex', justifyContent: 'center'}}>
       {gh
-        ? <img style={{width: "auto", height: "30px", flex: 0}} src={gitImg} alt="git"/>
+        ? <img style={{
+          width: "auto", 
+          height: "30px", 
+          flex: 0, 
+          textAlign: 'center',
+        }} 
+        src={gitImg} 
+        alt="git"
+      />
         : <p style={{color: "#fff"}}>Private GitHub (no access)</p>
       }
     </a>

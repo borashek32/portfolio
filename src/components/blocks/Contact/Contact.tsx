@@ -1,19 +1,18 @@
 import s from 'styles/Main.module.sass'
 import * as React from "react"
-import {useState} from "react"
-import {useSelector} from "react-redux"
-import {InputDefault} from "../utils/InputDefault"
-import {useFormik} from "formik"
+import { useState } from "react"
+import { useSelector } from "react-redux"
+import { InputDefault } from "../utils/InputDefault"
+import { useFormik } from "formik"
 import emailjs from '@emailjs/browser'
-import {Error} from "components/blocks/utils/Error"
-import {selectContact} from "components/blocks/Contact/contact.selector"
+import { Error } from "components/blocks/utils/Error"
+import { selectContact } from "components/blocks/Contact/contact.selector"
 import Loader from '../utils/Loader'
 import Notification from "components/blocks/utils/Notification"
-import {Trans} from "react-i18next"
+import { Trans } from "react-i18next"
 import Button from "@mui/material/Button"
-// @ts-ignore
-import Flip from "react-reveal/Flip"
-import { Box, Container, Typography } from '@mui/material'
+import { Header } from '../utils/Header'
+import { AppContainer } from '../utils/AppContainer'
 
 
 type FormikErrorType = {
@@ -77,42 +76,14 @@ export const Contact = () => {
 
 
   return (
-    <Container sx={{
-      position: 'relative',
-      height: 'auto',
-      paddingTop: 10,
-      paddingBottom: 10,
-      backgroundColor: '#31065A',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      flexDirection: 'column',
-      '@media (max-width: 1000px)': {
-        
-      },
-      '@media (max-width: 840px)': {
-        
-      }
-    }}
-      maxWidth={false}
+    <AppContainer
       id={contact.id}
+      bgColor='#31065A'
     >
-      <Flip>
-        <Typography sx={{
-            color: '#fff',
-            fontSize: 40,
-          }}
-        >
-          <Trans i18nKey={"contact.name"} />
-        </Typography>
-        <Box sx={{
-          width: 240,
-          height: 2,
-          backgroundColor: '#fff',
-          marginBottom: 8,
-        }}
-        ></Box>
-      </Flip>
+      <Header
+        title='contact.contact'
+        titleOtherColor='contact.me'
+      />
       {open && <Notification
         text={"Your message sent successfully"}
         severity={"success"}
@@ -165,6 +136,6 @@ export const Contact = () => {
           </div>
         </form>
       </div>
-    </Container>
+    </AppContainer>
   )
 }
