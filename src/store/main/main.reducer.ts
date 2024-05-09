@@ -5,6 +5,7 @@ import counters from "components/blocks/MyApps/img/2.png"
 import cards from "components/blocks/MyApps/img/4.png"
 import pb from "components/blocks/MyApps/img/pb.png"
 import inst from "components/blocks/MyApps/img/5.png"
+import brilliantStore from "components/blocks/MyApps/img/6.png"
 import parts from "components/blocks/MyApps/img/parts.jpg"
 import portfolio from "components/blocks/MyApps/img/portfolio.jpg"
 import separateBlocks from "components/blocks/MyApps/img/separate-blocks.jpg"
@@ -126,6 +127,18 @@ export const initialState: StateType = {
         header: "Free Math Trainer",
         imgPath: mathTrainer,
         imgAlt: "math-trainer",
+        target: true,
+        // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
+        desc: ''
+      },
+      {
+        id: "app-" + v1(),
+        index: 6,
+        link: "https://borashek32.github.io/jewellery-store-native-front-webpack/",
+        gh: "https://github.com/borashek32/jewellery-store-native-front-webpack",
+        header: "Native Brilliant Store",
+        imgPath: brilliantStore,
+        imgAlt: "brilliant-store",
         target: true,
         // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
         desc: ''
