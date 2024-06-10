@@ -12,7 +12,7 @@ function App() {
       <Route path="/" element={<Main name={"React-developer portfolio"}/>} />
       <Route path="/telegram" element={<Telegram name={"Messenger"}/>} />
       <Route path="/counters/*" element={<Counters/>} />
-      {/*<Route path="/cv" element={<PdfViewerComponent/>} />*/}
+      {/* <Route path="/cv" element={<PdfViewerComponent/>} /> */}
     </Routes>
   );
 }

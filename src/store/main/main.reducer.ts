@@ -136,9 +136,21 @@ export const initialState: StateType = {
         index: 6,
         link: "https://borashek32.github.io/jewellery-store-native-front-webpack/",
         gh: "https://github.com/borashek32/jewellery-store-native-front-webpack",
-        header: "Native Brilliant Store",
+        header: "Native JS Brilliant Store",
         imgPath: brilliantStore,
         imgAlt: "brilliant-store",
+        target: true,
+        // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
+        desc: ''
+      },
+      {
+        id: "app-" + v1(),
+        index: 7,
+        link: "https://dsk-gorki.vercel.app/",
+        gh: "https://github.com/borashek32/dsk-gorki",
+        header: "SDK 'Gorki'",
+        imgPath: counters,
+        imgAlt: "sdk-gorki",
         target: true,
         // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
         desc: ''

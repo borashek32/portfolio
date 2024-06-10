@@ -9,7 +9,7 @@ export const Footer = () => {
       height: 'auto',
       paddingTop: 6,
       paddingBottom: 6,
-      backgroundColor: '#31065A',
+      backgroundColor: '#170550',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
