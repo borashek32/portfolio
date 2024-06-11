@@ -52,7 +52,7 @@ export const Nav: FC<Props> = ({handleChangeLanguage}) => {
         marginLeft: '20px',
       }}>
         <img 
-          src={require('./react.png')} 
+          src={require('./logo.jpg')} 
           alt="react" 
           width='40px' 
         />
