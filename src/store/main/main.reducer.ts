@@ -146,7 +146,7 @@ export const initialState: StateType = {
       {
         id: "app-" + v1(),
         index: 7,
-        link: "https://dsk-gorki.vercel.app/",
+        link: "https://kids-club-lime.vercel.app/",
         gh: "https://github.com/borashek32/dsk-gorki",
         header: "SDK 'Gorki'",
         imgPath: counters,
