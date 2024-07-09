@@ -155,6 +155,18 @@ export const initialState: StateType = {
         // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
         desc: ''
       },
+      {
+        id: "app-" + v1(),
+        index: 8,
+        link: "https://nextjs-dashboard-phi-ashen-50.vercel.app/dashboard",
+        gh: "https://github.com/borashek32/nextjs-dashboard",
+        header: "NextJs dashboard",
+        imgPath: cards,
+        imgAlt: "next js dashboard",
+        target: true,
+        // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
+        desc: ''
+      },
       // {
       //   id: "app-" + v1(),
       //   index: 5,
