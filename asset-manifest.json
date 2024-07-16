@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.53c2993d.css",
-    "main.js": "/portfolio/static/js/main.34569053.js",
+    "main.css": "/portfolio/static/css/main.e9d9a952.css",
+    "main.js": "/portfolio/static/js/main.eb797c3b.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/counters.png": "/portfolio/static/media/counters.11067d523234b6338f8a.png",
     "static/media/promo.png": "/portfolio/static/media/promo.24517d948a7beced9f96.png",
+    "static/media/inst.png": "/portfolio/static/media/inst.543e808b60536c74c487.png",
     "static/media/unit.svg": "/portfolio/static/media/unit.a759800bfe54cde7de6676ac7a6dc325.svg",
-    "static/media/2.png": "/portfolio/static/media/2.19b15fc5b9fc47177695.png",
-    "static/media/4.png": "/portfolio/static/media/4.7cba6d88ca768de50521.png",
-    "static/media/3.png": "/portfolio/static/media/3.641aa88d276818c27c9e.png",
+    "static/media/cards.jpg": "/portfolio/static/media/cards.2ac724c91e8f20a30843.jpg",
     "static/media/tailwind.png": "/portfolio/static/media/tailwind.36b2728bf0d14b7b7576.png",
-    "static/media/5.png": "/portfolio/static/media/5.1395d57168fa2bf2217a.png",
     "static/media/navigation.png": "/portfolio/static/media/navigation.6d2af84886e2d0c93876.png",
-    "static/media/1.png": "/portfolio/static/media/1.fb2fa034177b3d2c7e32.png",
-    "static/media/6.png": "/portfolio/static/media/6.fb2fa034177b3d2c7e32.png",
+    "static/media/kids-club.jpg": "/portfolio/static/media/kids-club.4489e60c550c402f58a7.jpg",
+    "static/media/social-network.jpg": "/portfolio/static/media/social-network.48970595d0c36fdcf84e.jpg",
+    "static/media/todolist.jpg": "/portfolio/static/media/todolist.eb5acd68c7ab2dde7201.jpg",
+    "static/media/global-treid-m.jpg": "/portfolio/static/media/global-treid-m.83650cf68ff4357c7f89.jpg",
+    "static/media/store.jpg": "/portfolio/static/media/store.6e8efd9eb5dbf159e3e7.jpg",
     "static/media/gh.png": "/portfolio/static/media/gh.6149aa5ccbc036755594.png",
     "static/media/formik.svg": "/portfolio/static/media/formik.2df367655623c731631a005ebec188ea.svg",
     "static/media/js.png": "/portfolio/static/media/js.d9e5fd3fcc38c5939451.png",
     "static/media/rest.svg": "/portfolio/static/media/rest.b6ebe9498ac6e29cf8cb23db0795b560.svg",
     "static/media/ts.png": "/portfolio/static/media/ts.5415cac28606f3e5240d.png",
+    "static/media/math.jpg": "/portfolio/static/media/math.a74d78a3b7623a2a5ba5.jpg",
     "static/media/me.jpg": "/portfolio/static/media/me.2baab4bd6120d1bb99e1.jpg",
     "static/media/redux.png": "/portfolio/static/media/redux.b3b939c66aecf7d53967.png",
     "static/media/html.jpeg": "/portfolio/static/media/html.b757b1105a63ab582275.jpeg",
@@ -27,12 +30,12 @@
     "static/media/nextJs.svg": "/portfolio/static/media/nextJs.944c2d05a4b255507f6ebc24eef91334.svg",
     "index.html": "/portfolio/index.html",
     "static/media/getFetch.cjs": "/portfolio/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.53c2993d.css.map": "/portfolio/static/css/main.53c2993d.css.map",
-    "main.34569053.js.map": "/portfolio/static/js/main.34569053.js.map",
+    "main.e9d9a952.css.map": "/portfolio/static/css/main.e9d9a952.css.map",
+    "main.eb797c3b.js.map": "/portfolio/static/js/main.eb797c3b.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.53c2993d.css",
-    "static/js/main.34569053.js"
+    "static/css/main.e9d9a952.css",
+    "static/js/main.eb797c3b.js"
   ]
 }
