@@ -1,14 +1,13 @@
 import {v1} from "uuid"
-import todolist from "components/blocks/MyApps/img/1.png"
-import socialNetwork from "components/blocks/MyApps/img/3.png"
-import counters from "components/blocks/MyApps/img/2.png"
-import cards from "components/blocks/MyApps/img/4.png"
-import pb from "components/blocks/MyApps/img/pb.png"
-import inst from "components/blocks/MyApps/img/5.png"
-import brilliantStore from "components/blocks/MyApps/img/6.png"
-import parts from "components/blocks/MyApps/img/parts.jpg"
-import portfolio from "components/blocks/MyApps/img/portfolio.jpg"
-import separateBlocks from "components/blocks/MyApps/img/separate-blocks.jpg"
+import todolist from "components/blocks/MyApps/img/todolist.jpg"
+import socialNetwork from "components/blocks/MyApps/img/social-network.jpg"
+import counters from "components/blocks/MyApps/img/counters.png"
+import cards from "components/blocks/MyApps/img/cards.jpg"
+import inst from "components/blocks/MyApps/img/inst.png"
+import brilliantStore from "components/blocks/MyApps/img/store.jpg"
+import math from "components/blocks/MyApps/img/math.jpg"
+import kids from "components/blocks/MyApps/img/kids-club.jpg"
+import global from "components/blocks/MyApps/img/global-treid-m.jpg"
 import reactLogo from "components/blocks/MySkills/img/logo192.png"
 import nextLogo from "components/blocks/MySkills/img/nextJs.svg"
 import reduxLogo from "components/blocks/MySkills/img/redux.png"
@@ -125,7 +124,7 @@ export const initialState: StateType = {
         link: "https://learning-math-front-react.vercel.app/",
         gh: "https://github.com/borashek32/learning-math-front-react",
         header: "Free Math Trainer",
-        imgPath: mathTrainer,
+        imgPath: math,
         imgAlt: "math-trainer",
         target: true,
         // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
@@ -149,8 +148,20 @@ export const initialState: StateType = {
         link: "https://kids-club-lime.vercel.app/",
         gh: "https://github.com/borashek32/dsk-gorki",
         header: "Kid's club",
-        imgPath: counters,
+        imgPath: kids,
         imgAlt: "sdk-gorki",
+        target: true,
+        // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
+        desc: ''
+      },
+      {
+        id: "app-" + v1(),
+        index: 8,
+        link: "https://global-treid-m.vercel.app/",
+        gh: "https://github.com/borashek32/global-treid-m",
+        header: "Global treid-M",
+        imgPath: global,
+        imgAlt: "global-treid-m",
         target: true,
         // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
         desc: ''

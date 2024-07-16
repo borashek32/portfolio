@@ -43,7 +43,7 @@ export const CardApp: React.FC<CardAppType> = ({
             rel="noreferrer"
           >
             <Typography sx={{
-              fontSize: 18
+              fontSize: 18,
             }}>
               <Trans key={index} i18nKey={`myApps.apps.${index}.header`}>
                 {header}
@@ -54,7 +54,7 @@ export const CardApp: React.FC<CardAppType> = ({
         ) : (
           <NavLink to={link}>
             <Typography sx={{
-              fontSize: 18
+              fontSize: 18,
             }}>
               <Trans key={index} i18nKey={`myApps.apps.${index}.header`}>
                 {header}
