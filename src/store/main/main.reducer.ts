@@ -31,7 +31,7 @@ import navigation from "components/blocks/MySkills/img/navigation.png"
 
 
 export const initialState: StateType = {
-  lang: 'en',
+  lang: 'ru',
   links: [
     {index: 0, name: "About Me", href: "aboutMe"},
     {index: 2, name: "My Projects", href: "myProjects"},
