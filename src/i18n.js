@@ -9,7 +9,7 @@ i18n
   .use(Backend)
   .use(initReactI18next)
   .init({
-    lng: 'en',
+    lng: 'ru',
     fallbackLng: 'en',
     debug: false,
     backend: {

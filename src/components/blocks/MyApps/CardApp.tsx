@@ -44,6 +44,7 @@ export const CardApp: React.FC<CardAppType> = ({
           >
             <Typography sx={{
               fontSize: 18,
+              textAlign: "center",
             }}>
               <Trans key={index} i18nKey={`myApps.apps.${index}.header`}>
                 {header}
@@ -52,16 +53,18 @@ export const CardApp: React.FC<CardAppType> = ({
             </Typography>
           </a>
         ) : (
-          <NavLink to={link}>
-            <Typography sx={{
-              fontSize: 18,
-            }}>
-              <Trans key={index} i18nKey={`myApps.apps.${index}.header`}>
-                {header}
-              </Trans>
-            </Typography>
+          <>
+            <NavLink to={link}>
+              <Typography sx={{
+                fontSize: 18,
+              }}>
+                <Trans key={index} i18nKey={`myApps.apps.${index}.header`}>
+                  {header}
+                </Trans>
+              </Typography>
+            </NavLink>
             <LinkApp gh={gh}/>
-          </NavLink>
+          </>
         )}
       </Box>
     </Box>

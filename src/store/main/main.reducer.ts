@@ -8,6 +8,8 @@ import brilliantStore from "components/blocks/MyApps/img/store.jpg"
 import math from "components/blocks/MyApps/img/math.jpg"
 import kids from "components/blocks/MyApps/img/kids-club.jpg"
 import global from "components/blocks/MyApps/img/global-treid-m.jpg"
+import petnet from "components/blocks/MyApps/img/petnet.jpg"
+import restore from "components/blocks/MyApps/img/restore.jpg"
 import reactLogo from "components/blocks/MySkills/img/logo192.png"
 import nextLogo from "components/blocks/MySkills/img/nextJs.svg"
 import reduxLogo from "components/blocks/MySkills/img/redux.png"
@@ -25,7 +27,6 @@ import tailwind from "components/blocks/MySkills/img/tailwind.png"
 import htmlLogo from "components/blocks/MySkills/img/html.jpeg"
 import swagger from "components/blocks/MySkills/img/swagger.svg"
 import {LangType, StateType} from "store/main/main.types"
-import mathTrainer from "components/blocks/MyApps/img/6.png"
 import navigation from "components/blocks/MySkills/img/navigation.png"
 
 
@@ -46,185 +47,126 @@ export const initialState: StateType = {
     id: "myProjects",
     name: "My Projects",
     apps: [
-      // {
-      //   id: "app-" + v1(),
-      //   index: 1,
-      //   link: "https://borashek32.github.io/personal-blog/",
-      //   gh: "https://github.com/borashek32/personal-blog",
-      //   header: "Personal Blog (in process)",
-      //   imgPath: pb,
-      //   imgAlt: "personal-blog",
-      //   target: true,
-      //   // desc: "Task tracker is an online platform for organizing your personal or work tasks which can help you to increase the productivity, manage tasks effectively and improve time management. Made on React + Redux using all the advantages of these tools, following the right architecture and the best practices.",
-      //   desc: ''
-      // },
+      {
+        id: "app-" + v1(),
+        index: 0,
+        link: "https://www.pet-net.ru/",
+        header: "Pet-net",
+        imgPath: petnet,
+        imgAlt: "pet-net.ru",
+        target: true,
+        desc: ''
+      },
       {
         id: "app-" + v1(),
         index: 1,
-        link: "https://borashek32.github.io/way-samurai_social-network_ts_old/",
-        gh: "https://github.com/borashek32/way-samurai_social-network_ts_old",
-        header: "Social Network",
-        imgPath: socialNetwork,
-        imgAlt: "social-network",
+        link: "https://mobile-awards.re-store.ru/",
+        header: "Mobile awards",
+        imgPath: restore,
+        imgAlt: "pet-net.ru",
         target: true,
-        // desc: "Social Network is an online platform for any company that allows people to create an account and communicate with other people on the website. It can be used in a company, for example. This app was build on old school class components, following all architectural principles of them."
         desc: ''
       },
       {
         id: "app-" + v1(),
         index: 2,
-        link: "/counters",
-        gh: "https://github.com/borashek32/portfolio/tree/main/src/components/counters",
-        header: "Time Tracker",
-        imgPath: counters,
-        imgAlt: "counters",
-        target: false,
-        // desc: "To tell the truth, counters don't have a lot of practical use. They allow us to do some settings which influence on the way how the counter works. Anyways they are good examples of great opportunities which libraries of React and Redux provide. The advanced counter has a timer, what works on hooks and local storage."
-        desc: ''
-      },
-      {
-        id: "app-" + v1(),
-        index: 3,
-        link: "https://borashek32.github.io/cards",
-        gh: "https://github.com/borashek32/cards",
-        header: "Smart Learning Cards",
-        imgPath: cards,
-        imgAlt: "cards",
-        target: true,
-        // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
-        desc: ''
-      },
-      {
-        id: "app-" + v1(),
-        index: 4,
-        link: "https://inctagram-blazing-bonfires.vercel.app/sign-in",
-        gh: "https://github.com/kozyrovladimir/inctagram_blazing_bonfires/tree/dev",
-        header: "Instagram Clone",
-        imgPath: inst,
-        imgAlt: "inst",
-        target: true,
-        // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
-        desc: ''
-      },
-      {
-        id: "app-" + v1(),
-        index: 5,
-        link: "https://learning-math-front-react.vercel.app/",
-        gh: "https://github.com/borashek32/learning-math-front-react",
-        header: "Free Math Trainer",
-        imgPath: math,
-        imgAlt: "math-trainer",
-        target: true,
-        // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
-        desc: ''
-      },
-      {
-        id: "app-" + v1(),
-        index: 6,
-        link: "https://borashek32.github.io/jewellery-store-native-front-webpack/",
-        gh: "https://github.com/borashek32/jewellery-store-native-front-webpack",
-        header: "Native JS Brilliant Store",
-        imgPath: brilliantStore,
-        imgAlt: "brilliant-store",
-        target: true,
-        // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
-        desc: ''
-      },
-      {
-        id: "app-" + v1(),
-        index: 7,
         link: "https://kids-club-lime.vercel.app/",
         gh: "https://github.com/borashek32/dsk-gorki",
         header: "Kid's club",
         imgPath: kids,
         imgAlt: "sdk-gorki",
         target: true,
-        // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
         desc: ''
       },
       {
         id: "app-" + v1(),
-        index: 8,
-        link: "https://borashek32.github.io/todolists/",
-        gh: "https://github.com/borashek32/todolists",
-        header: "Task Manager",
-        imgPath: todolist,
-        imgAlt: "todolists",
-        target: true,
-        // desc: "Task tracker is an online platform for organizing your personal or work tasks which can help you to increase the productivity, manage tasks effectively and improve time management. Made on React + Redux using all the advantages of these tools, following the right architecture and the best practices.",
-        desc: ''
-      },
-      {
-        id: "app-" + v1(),
-        index: 9,
+        index: 3,
         link: "https://global-treid-m.vercel.app/",
         gh: "https://github.com/borashek32/global-treid-m",
         header: "Global treid-M",
         imgPath: global,
         imgAlt: "global-treid-m",
         target: true,
-        // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
         desc: ''
       },
-      // {
-      //   id: "app-" + v1(),
-      //   index: 8,
-      //   link: "https://nextjs-dashboard-phi-ashen-50.vercel.app/dashboard",
-      //   gh: "https://github.com/borashek32/nextjs-dashboard",
-      //   header: "NextJs dashboard",
-      //   imgPath: cards,
-      //   imgAlt: "next js dashboard",
-      //   target: true,
-      //   // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
-      //   desc: ''
-      // },
-      // {
-      //   id: "app-" + v1(),
-      //   index: 5,
-      //   link: "https://lemma-auto.ru",
-      //   gh: "",
-      //   header: "Shop of Auto Parts",
-      //   imgPath: parts,
-      //   imgAlt: "parts",
-      //   target: true,
-      //   // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
-      //   desc: ''
-      // },
-      // {
-      //   id: "app-" + v1(),
-      //   index: 6,
-      //   link: "https://www.digitalcoffeedesign.com/",
-      //   gh: "https://github.com/borashek32/digitalcoffeedesign.com",
-      //   header: "My Old Portfolio",
-      //   imgPath: portfolio,
-      //   imgAlt: "portfolio",
-      //   target: true,
-      //   // desc: "This app is a management system. It can be implemented at school, university or any work. It allow us to create packs and cards in them. Every card consists of a question and a correct answer. You reply to a question and can immediately check yourself. My system build on reusable components and it can be rewrote for any business easily."
-      //   desc: ''
-      // }
-      // {
-      //   id: "app-" + v1(),
-      //   index: 4,
-      //   link: "https://borashek32.github.io/way-samurai_hw-autotests",
-      //   gh: "https://github.com/borashek32/way-samurai_hw-autotests",
-      //   header: "Separate Blocks",
-      //   imgPath: separateBlocks,
-      //   imgAlt: "separate-blocks",
-      //   target: true,
-      //   // desc: "These blocks exist on every web page. I made them using all advantages of React, native CSS just to show you. I've made them like a stand to take a separate block to a new app, what is built. Some blocks depends on each other, because they are reusable. I've built them on functional components, using Hooks, local storage."
-      //   desc: ''
-      // },
-      // {
-      //   id: "app-" + v1(),
-      //   link: "/telegram",
-      //   gh: "https://github.com/borashek32/portfolio/tree/main/src/components/telegram",
-      //   header: "Messenger",
-      //   imgPath: tl,
-      //   imgAlt: "messenger",
-      //   target: false,
-      //   // desc: "In this pet project I was trying to simulate behavior of the messenger like Telegram. Just imagine, that users are on separate PCs and my messenger allows them to write each other, edit own messages and delete them. Their messages appear immediately and synchronously on two parts of the screen as it is in a real messenger.",
-      // desc: ''
-      // }
+      {
+        id: "app-" + v1(),
+        index: 4,
+        link: "https://borashek32.github.io/way-samurai_social-network_ts_old/",
+        gh: "https://github.com/borashek32/way-samurai_social-network_ts_old",
+        header: "Social Network",
+        imgPath: socialNetwork,
+        imgAlt: "social-network",
+        target: true,
+        desc: ''
+      },
+      {
+        id: "app-" + v1(),
+        index: 5,
+        link: "/counters",
+        gh: "https://github.com/borashek32/portfolio/tree/main/src/components/counters",
+        header: "Time Tracker",
+        imgPath: counters,
+        imgAlt: "counters",
+        target: false,
+        desc: ''
+      },
+
+      {
+        id: "app-" + v1(),
+        index: 6,
+        link: "https://borashek32.github.io/cards",
+        gh: "https://github.com/borashek32/cards",
+        header: "Smart Learning Cards",
+        imgPath: cards,
+        imgAlt: "cards",
+        target: true,
+        desc: ''
+      },
+      {
+        id: "app-" + v1(),
+        index: 7,
+        link: "https://inctagram-blazing-bonfires.vercel.app/sign-in",
+        gh: "https://github.com/kozyrovladimir/inctagram_blazing_bonfires/tree/dev",
+        header: "Instagram Clone",
+        imgPath: inst,
+        imgAlt: "inst",
+        target: true,
+        desc: ''
+      },
+      {
+        id: "app-" + v1(),
+        index: 8,
+        link: "https://learning-math-front-react.vercel.app/",
+        gh: "https://github.com/borashek32/learning-math-front-react",
+        header: "Free Math Trainer",
+        imgPath: math,
+        imgAlt: "math-trainer",
+        target: true,
+        desc: ''
+      },
+      {
+        id: "app-" + v1(),
+        index: 9,
+        link: "https://borashek32.github.io/jewellery-store-native-front-webpack/",
+        gh: "https://github.com/borashek32/jewellery-store-native-front-webpack",
+        header: "Native JS Brilliant Store",
+        imgPath: brilliantStore,
+        imgAlt: "brilliant-store",
+        target: true,
+        desc: ''
+      },
+      {
+        id: "app-" + v1(),
+        index: 10,
+        link: "https://borashek32.github.io/todolists/",
+        gh: "https://github.com/borashek32/todolists",
+        header: "Task Manager",
+        imgPath: todolist,
+        imgAlt: "todolists",
+        target: true,
+        desc: ''
+      },
     ]
   },
   hireMe: {

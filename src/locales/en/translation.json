@@ -24,9 +24,12 @@
     "my": "My",
     "projects": "Projects",
     "apps": [
-      { "header": "Task Manager" },
+      { "header": "Pet-net" },
+      { "header": "Mobile awards" },
+      { "header": "Kid's club" },
+      { "header": "Global treid-M" },
       { "header": "Social Network" },
-      { "header": "Time Tracker" },
+      { "header": "Don't forget about time:)" },
       { "header": "Smart Learning Cards" },
       { "header": "Instagram Clone"},
       { "header": "Free Math Trainer" }

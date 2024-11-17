@@ -24,12 +24,15 @@
     "my": "Mis",
     "projects": "Proyectos",
     "apps": [
-      { "header": "Administrador de tareas" },
-      { "header": "Red social" },
-      { "header": "Rastreador de tiempo" },
-      { "header": "Tarjetas de aprendizaje" },
-      { "header": "Instagram Clon"},
-      { "header": "Simulador de matemáticas" }
+      { "header": "Pet-net" },
+      { "header": "Mobile awards" },
+      { "header": "Kid's club" },
+      { "header": "Global treid-M" },
+      { "header": "Social Network" },
+      { "header": "Don't forget about time:)" },
+      { "header": "Smart Learning Cards" },
+      { "header": "Instagram Clone"},
+      { "header": "Free Math Trainer" }
     ]
   },
   "hireMe": {
