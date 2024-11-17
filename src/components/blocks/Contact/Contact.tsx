@@ -78,7 +78,7 @@ export const Contact = () => {
   return (
     <AppContainer
       id={contact.id}
-      bgColor='#31065A'
+      bgColor='#170550'
     >
       <Header
         title='contact.contact'

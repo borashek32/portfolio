@@ -54,7 +54,7 @@ export const MySkills = () => {
   return (
     <AppContainer
       id={mySkills.id}
-      bgColor="#170550"
+      bgColor="#31065A"
     >
       <Header 
         id={mySkills.name}

@@ -32,7 +32,10 @@
       { "header": "Free Math Trainer" }
     ]
   },
-  "hireMe": { "name": "My Resumes" },
+  "hireMe": { 
+    "title": "My",
+    "titleOtherColor": "Resumes" 
+  },
   "contact": {
     "contact": "Contact",
     "me": "Me",

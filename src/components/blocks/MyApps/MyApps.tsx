@@ -29,7 +29,7 @@ export const MyApps = () => {
   return (
     <AppContainer
       id={myApps.id}
-      bgColor="#31065A"
+      bgColor="#170550"
     >
       <Header
         title='myApps.my'

@@ -46,18 +46,6 @@ export const initialState: StateType = {
     id: "myProjects",
     name: "My Projects",
     apps: [
-      {
-        id: "app-" + v1(),
-        index: 0,
-        link: "https://borashek32.github.io/todolists/",
-        gh: "https://github.com/borashek32/todolists",
-        header: "Task Manager",
-        imgPath: todolist,
-        imgAlt: "todolists",
-        target: true,
-        // desc: "Task tracker is an online platform for organizing your personal or work tasks which can help you to increase the productivity, manage tasks effectively and improve time management. Made on React + Redux using all the advantages of these tools, following the right architecture and the best practices.",
-        desc: ''
-      },
       // {
       //   id: "app-" + v1(),
       //   index: 1,
@@ -157,6 +145,18 @@ export const initialState: StateType = {
       {
         id: "app-" + v1(),
         index: 8,
+        link: "https://borashek32.github.io/todolists/",
+        gh: "https://github.com/borashek32/todolists",
+        header: "Task Manager",
+        imgPath: todolist,
+        imgAlt: "todolists",
+        target: true,
+        // desc: "Task tracker is an online platform for organizing your personal or work tasks which can help you to increase the productivity, manage tasks effectively and improve time management. Made on React + Redux using all the advantages of these tools, following the right architecture and the best practices.",
+        desc: ''
+      },
+      {
+        id: "app-" + v1(),
+        index: 9,
         link: "https://global-treid-m.vercel.app/",
         gh: "https://github.com/borashek32/global-treid-m",
         header: "Global treid-M",

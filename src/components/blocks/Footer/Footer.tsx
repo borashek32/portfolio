@@ -9,7 +9,7 @@ export const Footer = () => {
       height: 'auto',
       paddingTop: 6,
       paddingBottom: 6,
-      backgroundColor: '#170550',
+      backgroundColor: '#31065A',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
@@ -41,7 +41,7 @@ export const Footer = () => {
           fontSize: 20,
           fontWeight: 600
         }}>
-          baranova.natalia.frontend@gmail.com
+          borashek88@gmail.com
         </Typography>
       </a>
     </Container>

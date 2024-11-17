@@ -10,6 +10,8 @@ import {Trans} from "react-i18next"
 import {selectLang} from "components/blocks/Nav/nav.selector"
 // @ts-ignore
 import Flip from "react-reveal/Flip"
+import { Header } from "../utils/Header"
+import { AppContainer } from "../utils/AppContainer"
 
 export const HireMe = () => {
 
@@ -41,12 +43,14 @@ export const HireMe = () => {
   }
 
   return (
-    <div className={s.block} id={"myProjects"}>
-      <Flip>
-        <h2 id={hireMe.id} className={s.blockTitle}>
-          <Trans i18nKey={"hireMe.name"}>{hireMe.name}</Trans>
-        </h2>
-      </Flip>
+    <AppContainer
+      id={hireMe.id}
+      bgColor="#31065A"
+    >
+      <Header
+        title='hireMe.title'
+        titleOtherColor='hireMe.titleOtherColor'
+      />
 
       {loader && <Loader />}
 
@@ -70,6 +74,6 @@ export const HireMe = () => {
           <ButtonDefault name={"HeadHunters"} type={"button"} />
         </a>
       </div>
-    </div>
+    </AppContainer>
   )
 }
