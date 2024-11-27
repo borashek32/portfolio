@@ -156,17 +156,17 @@ export const initialState: StateType = {
         target: true,
         desc: ''
       },
-      {
-        id: "app-" + v1(),
-        index: 10,
-        link: "https://borashek32.github.io/todolists/",
-        gh: "https://github.com/borashek32/todolists",
-        header: "Task Manager",
-        imgPath: todolist,
-        imgAlt: "todolists",
-        target: true,
-        desc: ''
-      },
+      // {
+      //   id: "app-" + v1(),
+      //   index: 10,
+      //   link: "https://borashek32.github.io/todolists/",
+      //   gh: "https://github.com/borashek32/todolists",
+      //   header: "Task Manager",
+      //   imgPath: todolist,
+      //   imgAlt: "todolists",
+      //   target: true,
+      //   desc: ''
+      // },
     ]
   },
   hireMe: {
