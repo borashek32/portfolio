@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3c99d4be.css",
-    "main.js": "/portfolio/static/js/main.3df4ea06.js",
+    "main.js": "/portfolio/static/js/main.7a1f971f.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/counters.png": "/portfolio/static/media/counters.11067d523234b6338f8a.png",
     "static/media/promo.png": "/portfolio/static/media/promo.24517d948a7beced9f96.png",
     "static/media/inst.png": "/portfolio/static/media/inst.543e808b60536c74c487.png",
     "static/media/unit.svg": "/portfolio/static/media/unit.a759800bfe54cde7de6676ac7a6dc325.svg",
@@ -13,7 +12,6 @@
     "static/media/kids-club.jpg": "/portfolio/static/media/kids-club.4489e60c550c402f58a7.jpg",
     "static/media/social-network.jpg": "/portfolio/static/media/social-network.48970595d0c36fdcf84e.jpg",
     "static/media/global-treid-m.jpg": "/portfolio/static/media/global-treid-m.83650cf68ff4357c7f89.jpg",
-    "static/media/store.jpg": "/portfolio/static/media/store.6e8efd9eb5dbf159e3e7.jpg",
     "static/media/gh.png": "/portfolio/static/media/gh.6149aa5ccbc036755594.png",
     "static/media/petnet.jpg": "/portfolio/static/media/petnet.0d72467c7480ec2a73d9.jpg",
     "static/media/formik.svg": "/portfolio/static/media/formik.2df367655623c731631a005ebec188ea.svg",
@@ -32,11 +30,11 @@
     "index.html": "/portfolio/index.html",
     "static/media/getFetch.cjs": "/portfolio/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.3c99d4be.css.map": "/portfolio/static/css/main.3c99d4be.css.map",
-    "main.3df4ea06.js.map": "/portfolio/static/js/main.3df4ea06.js.map",
+    "main.7a1f971f.js.map": "/portfolio/static/js/main.7a1f971f.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3c99d4be.css",
-    "static/js/main.3df4ea06.js"
+    "static/js/main.7a1f971f.js"
   ]
 }
