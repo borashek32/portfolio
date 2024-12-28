@@ -100,21 +100,20 @@ export const initialState: StateType = {
         target: true,
         desc: ''
       },
+      // {
+      //   id: "app-" + v1(),
+      //   index: 5,
+      //   link: "/counters",
+      //   gh: "https://github.com/borashek32/portfolio/tree/main/src/components/counters",
+      //   header: "Time Tracker",
+      //   imgPath: counters,
+      //   imgAlt: "counters",
+      //   target: false,
+      //   desc: ''
+      // },
       {
         id: "app-" + v1(),
         index: 5,
-        link: "/counters",
-        gh: "https://github.com/borashek32/portfolio/tree/main/src/components/counters",
-        header: "Time Tracker",
-        imgPath: counters,
-        imgAlt: "counters",
-        target: false,
-        desc: ''
-      },
-
-      {
-        id: "app-" + v1(),
-        index: 6,
         link: "https://borashek32.github.io/cards",
         gh: "https://github.com/borashek32/cards",
         header: "Smart Learning Cards",
@@ -125,7 +124,7 @@ export const initialState: StateType = {
       },
       {
         id: "app-" + v1(),
-        index: 7,
+        index: 6,
         link: "https://inctagram-blazing-bonfires.vercel.app/sign-in",
         gh: "https://github.com/kozyrovladimir/inctagram_blazing_bonfires/tree/dev",
         header: "Instagram Clone",
@@ -136,7 +135,7 @@ export const initialState: StateType = {
       },
       {
         id: "app-" + v1(),
-        index: 8,
+        index: 7,
         link: "https://learning-math-front-react.vercel.app/",
         gh: "https://github.com/borashek32/learning-math-front-react",
         header: "Free Math Trainer",
@@ -145,17 +144,17 @@ export const initialState: StateType = {
         target: true,
         desc: ''
       },
-      {
-        id: "app-" + v1(),
-        index: 9,
-        link: "https://borashek32.github.io/jewellery-store-native-front-webpack/",
-        gh: "https://github.com/borashek32/jewellery-store-native-front-webpack",
-        header: "Native JS Brilliant Store",
-        imgPath: brilliantStore,
-        imgAlt: "brilliant-store",
-        target: true,
-        desc: ''
-      },
+      // {
+      //   id: "app-" + v1(),
+      //   index: 9,
+      //   link: "https://borashek32.github.io/jewellery-store-native-front-webpack/",
+      //   gh: "https://github.com/borashek32/jewellery-store-native-front-webpack",
+      //   header: "Native JS Brilliant Store",
+      //   imgPath: brilliantStore,
+      //   imgAlt: "brilliant-store",
+      //   target: true,
+      //   desc: ''
+      // },
       // {
       //   id: "app-" + v1(),
       //   index: 10,
