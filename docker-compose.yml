@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  app:
+    container_name: portfolio
+    image: node:22.3.0 # Используем готовый образ Node.js
+    working_dir: /app  # Устанавливаем рабочую директорию
+    ports:
+      - "3000:3000" # Перенаправление порта 80 контейнера на порт 3000 хоста
+    volumes:
+      - .:/app    # Подключение локальных файлов к контейнеру
+      - /app/node_modules # Исключение node_modules для избежания конфликтов
+    command: sh -c "npm install --legacy-peer-deps && npm start" # Устанавливаем зависимости с флагом
+    environment:
+      - NODE_ENV=development
