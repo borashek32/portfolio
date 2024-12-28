@@ -92,7 +92,7 @@ export const initialState: StateType = {
       {
         id: "app-" + v1(),
         index: 4,
-        link: "https://borashek32.github.io/way-samurai_social-network_ts_old/",
+        link: "https://borashek32.github.io/social-network_ts_old/",
         gh: "https://github.com/borashek32/way-samurai_social-network_ts_old",
         header: "Social Network",
         imgPath: socialNetwork,
