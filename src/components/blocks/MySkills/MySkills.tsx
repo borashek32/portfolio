@@ -19,7 +19,7 @@ export const MySkills = () => {
           key={app.id}
           href={app.link}
           className={styles.navLinkClassSkills}
-          target={"_blank"}
+          target={"_blank"} rel="noreferrer"
         >
           <div className={styles.logoWrapper}>
             <img
@@ -54,7 +54,7 @@ export const MySkills = () => {
   return (
     <AppContainer
       id={mySkills.id}
-      bgColor="#31065A"
+      bgColor="#170550"
     >
       <Header 
         id={mySkills.name}

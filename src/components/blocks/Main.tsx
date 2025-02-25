@@ -65,7 +65,7 @@ export const Main: React.FC<MainPropsType> = ({name}) => {
       >
         <Promo />
         <AboutMe/>
-        <HireMe />
+        {/* <HireMe /> */}
         <MyApps/>
         <MySkills/>
         {/* <Contact/> */}

@@ -39,7 +39,7 @@ export const initialState: StateType = {
     {index: 0, name: "About Me", href: "aboutMe"},
     {index: 2, name: "My Projects", href: "myProjects"},
     {index: 3, name: "My Skills", href: "mySkills"},
-    {index: 4, name: "Contact", href: "contact"}
+    // {index: 4, name: "Contact", href: "contact"}
   ],
   aboutMe: {
     id: "aboutMe",
