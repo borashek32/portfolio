@@ -120,9 +120,9 @@ export const Promo = () => {
           marginTop: 4,
           marginBottom: 4
         }}>
-          <a href="https://www.linkedin.com/in/nataly-baranova-972952253/" target={'_blank'}>
+          {/* <a href="https://www.linkedin.com/in/nataly-baranova-972952253/" target={'_blank'}>
             <LinkedInIcon fontSize='large' />
-          </a>
+          </a> */}
           <a href="https://github.com/borashek32" target={'_blank'}>
             <GitHubIcon fontSize='large' />
           </a>
@@ -156,7 +156,7 @@ export const Promo = () => {
             <FacebookIcon fontSize='large' />
           </a>
         </Box>
-        <Box>
+        {/* <Box>
           <a 
             href={
               lang === 'ru' ? './cv_rus.pdf' : lang === 'en' ? './cv_eng.pdf' : './cv_esp.pdf'
@@ -169,7 +169,7 @@ export const Promo = () => {
               callback={downloadPDF} 
             />
           </a>
-        </Box>
+        </Box> */}
       </Box>
       <ImageListItem sx={{
         '@media (max-width: 1200px)': {
