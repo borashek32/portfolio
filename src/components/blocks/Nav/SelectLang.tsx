@@ -80,7 +80,7 @@ export const SelectLang: FC<Props> = ({ handleChangeLanguage }) => {
             >
               English
             </MenuItem>
-            <MenuItem
+            {/* <MenuItem
               sx={{
                 fontSize: 18,
                 fontWeight: 600,
@@ -92,7 +92,7 @@ export const SelectLang: FC<Props> = ({ handleChangeLanguage }) => {
               value={'es'}
             >
               Español
-            </MenuItem>
+            </MenuItem> */}
             <MenuItem
               sx={{
                 fontSize: 18,

@@ -68,7 +68,7 @@ export const Main: React.FC<MainPropsType> = ({name}) => {
         <HireMe />
         <MyApps/>
         <MySkills/>
-        <Contact/>
+        {/* <Contact/> */}
         <Footer/>
       </Container>  
     </ThemeProvider>

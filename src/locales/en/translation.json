@@ -11,14 +11,14 @@
     "subheaderTop": "Hi, It's me",
     "header": "Baranova Natalia",
     "subheaderMiddle": "And I'm a ",
-    "frontendDev": "Frontend Developer",
+    "frontendDev": "Fullstack Developer",
     "subheaderBottom": "TypeScript, React JS, Redux Toolkit, Rtk-query and others" 
   },
   "aboutMe": {
     "about": "About",
     "me": "Me",
-    "title": "Frontend Developer",
-    "desc": "My name is Baranova Nataly. I 'm a front-end developer looking for the opportunities to grow professionally. Having 2-year background in back-end and full-stack development I have a deep understanding of all the software development processes and how Agile projects are run. Taking part in the whole software life cycle and permanent desire to learn something new made me realize that a work of a front-end developer would help me to grow professionally, develop my skills and enjoy the job I am doing every day. Being a part of the teams I developed good communication skills. Respect and a friendly attitude towards every one around are the ground rules of my life."
+    "title": "Fullstack Developer",
+    "desc": "My name is Natalia Baranova. I am a full-stack developer seeking opportunities for professional growth. I worked with databases at the Ministry of Economic Development for over 10 years and developed my own solution using MS Access. Later, I transitioned to web development and worked with PHP using frameworks like Laravel, Yii2, and Symfony 5. After that, I decided to expand my knowledge and try my hand at frontend development. For this, I attended an IT school where I studied JavaScript/TypeScript, React, and Next.js. Although working on the frontend gave me valuable experience, I realized that I enjoy backend development the most. Currently, I am actively improving my skills in this area by working with Laravel/PHP in a startup team."
   },
   "myApps": {
     "my": "My",
@@ -29,12 +29,8 @@
       { "header": "Kid's club" },
       { "header": "Global treid-M" },
       { "header": "Social Network" },
-      { "header": "Don't forget about time:)" },
-      { "header": "Smart Learning Cards" },
       { "header": "Instagram Clone"},
-      { "header": "Free Math Trainer" },
-      { "header": "Jewellery Store" },
-      { "header": "Tasks manager" }
+      { "header": "Free Math Trainer" }
     ]
   },
   "hireMe": { 
