@@ -88,14 +88,14 @@ export const Promo = () => {
           display: 'flex',
           gap: 2
         }}>
-          <Typography sx={{
+          {/* <Typography sx={{
             fontSize: 35,
             '@media (max-width: 620px)': {
               fontSize: '20px'
             }
           }}>
             <Trans i18nKey={"promo.subheaderMiddle"} />
-          </Typography>
+          </Typography> */}
           <Typography sx={{
             color: "#F86F03",
             fontSize: 35,

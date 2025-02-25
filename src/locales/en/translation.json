@@ -10,9 +10,8 @@
   "promo": {
     "subheaderTop": "Hi, It's me",
     "header": "Baranova Natalia",
-    "subheaderMiddle": "And I'm a ",
     "frontendDev": "Fullstack Developer",
-    "subheaderBottom": "TypeScript, React JS, Redux Toolkit, Rtk-query and others" 
+    "subheaderBottom": "PHP, JavaScript, TypeScript, Laravel, ReactJs, NextJs" 
   },
   "aboutMe": {
     "about": "About",

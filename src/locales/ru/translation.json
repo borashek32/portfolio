@@ -10,9 +10,8 @@
   "promo": {
     "subheaderTop": "Привет, это я",
     "header": "Баранова Наталья",
-    "subheaderMiddle": "И я",
     "frontendDev": "Fullstack Разработчик",
-    "subheaderBottom": "Fullstack разработчик: Laravel, React JS, Next JS"
+    "subheaderBottom": "PHP, JavaScript, TypeScript, Laravel, ReactJs, NextJs" 
   },
   "aboutMe": {
     "about": "Обо",
