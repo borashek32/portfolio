@@ -8,21 +8,22 @@
     { "name": "Contact" }
   ],
   "promo": {
-    "subheaderTop": "Hi, It's me",
-    "header": "Baranova Natalia",
-    "frontendDev": "Fullstack Developer",
-    "subheaderBottom": "PHP, JavaScript, TypeScript, Laravel, ReactJs, NextJs" 
+    "subheaderTop": "Hi,",
+    "header": "i'm Baranova Natalia",
+    "frontendDev": "Backend Developer",
+    "subheaderBottom": "PHP, Symfony, Laravel" 
   },
   "aboutMe": {
     "about": "About",
     "me": "Me",
-    "title": "Fullstack Developer",
-    "desc": "My name is Natalia Baranova. I am a full-stack developer seeking opportunities for professional growth. I worked with databases at the Ministry of Economic Development for over 10 years and developed my own solution using MS Access. Later, I transitioned to web development and worked with PHP using frameworks like Laravel, Yii2, and Symfony 5. After that, I decided to expand my knowledge and try my hand at frontend development. For this, I attended an IT school where I studied JavaScript/TypeScript, React, and Next.js. Although working on the frontend gave me valuable experience, I realized that I enjoy backend development the most. Currently, I am actively improving my skills in this area by working with Laravel/PHP in a startup team."
+    "title": "Backend Developer",
+    "desc": "My name is Natalya Baranova. I am a backend developer looking for opportunities for professional growth. I have over 10 years of experience working with databases at the Ministry of Economic Development, where I also developed a custom solution using MS Access. Later, I transitioned into web development and worked with PHP using frameworks such as Laravel (versions 9/11), Yii2, and Symfony (versions 5/6). Currently, I have been working for over a year with Symfony 6.4 and PHP at an insurance company — https://euro-ins.ru. In my work, I follow Domain-Driven Design (DDD) principles and clean code practices. I also use containerization and, when needed, utilize Grafana k6 for load testing."
   },
   "myApps": {
     "my": "My",
     "projects": "Projects",
     "apps": [
+      { "header": "Euro-ins" },
       { "header": "Pet-net" },
       { "header": "Mobile awards" },
       { "header": "Kid's club" },
