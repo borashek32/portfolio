@@ -1,7 +1,7 @@
 import React from 'react'
 import {AlertTitle} from "@mui/material"
 import {pink} from "@mui/material/colors"
-import {Link} from "react-scroll"
+import { Link as ScrollLink } from "react-scroll"
 import {Trans} from "react-i18next"
 
 
@@ -13,6 +13,7 @@ type NavbarLinkType = {
 }
 
 export const NavbarLink: React.FC<NavbarLinkType> = ({name, href, index, onClose}) => {
+  const Link = ScrollLink as unknown as React.FC<any>
 
   return (
     <Link to={href} spy={true} smooth={true} offset={50} duration={500}>
